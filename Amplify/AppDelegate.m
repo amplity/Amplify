@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
+#import "HomTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -25,12 +27,12 @@
 
 
 -(void)setupAppInit{
-    UINavigationController * rootNavigationController = [[UINavigationController alloc] init];
+    HomTabBarController * homTabBarController = [[HomTabBarController alloc] init];
     
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = rootNavigationController;
+    self.window.rootViewController = homTabBarController;
     [self.window makeKeyAndVisible];
 }
 
