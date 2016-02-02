@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5E0538631C589A8C00CF8317 /* BaseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0538611C589A8C00CF8317 /* BaseTableController.m */; };
 		5E0538641C589A8C00CF8317 /* BaseTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E0538621C589A8C00CF8317 /* BaseTableController.xib */; };
+		5E547B171C60471800155618 /* BaseMultipleSectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E547B151C60471800155618 /* BaseMultipleSectionTableViewController.m */; };
+		5E547B181C60471800155618 /* BaseMultipleSectionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E547B161C60471800155618 /* BaseMultipleSectionTableViewController.xib */; };
 		5E588C381C55FC4000AD1C16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E588C371C55FC4000AD1C16 /* main.m */; };
 		5E588C3B1C55FC4000AD1C16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E588C3A1C55FC4000AD1C16 /* AppDelegate.m */; };
 		5E588C431C55FC4000AD1C16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E588C421C55FC4000AD1C16 /* Assets.xcassets */; };
@@ -54,6 +56,9 @@
 		5E0538601C589A8C00CF8317 /* BaseTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableController.h; sourceTree = "<group>"; };
 		5E0538611C589A8C00CF8317 /* BaseTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableController.m; sourceTree = "<group>"; };
 		5E0538621C589A8C00CF8317 /* BaseTableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseTableController.xib; sourceTree = "<group>"; };
+		5E547B141C60471800155618 /* BaseMultipleSectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMultipleSectionTableViewController.h; sourceTree = "<group>"; };
+		5E547B151C60471800155618 /* BaseMultipleSectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMultipleSectionTableViewController.m; sourceTree = "<group>"; };
+		5E547B161C60471800155618 /* BaseMultipleSectionTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseMultipleSectionTableViewController.xib; sourceTree = "<group>"; };
 		5E573DBE1C59B1C80080AC60 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		5E573DBF1C59B2760080AC60 /* ProjDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjDef.h; sourceTree = "<group>"; };
 		5E588C331C55FC4000AD1C16 /* Amplify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amplify.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +236,9 @@
 				5E0538601C589A8C00CF8317 /* BaseTableController.h */,
 				5E0538611C589A8C00CF8317 /* BaseTableController.m */,
 				5E0538621C589A8C00CF8317 /* BaseTableController.xib */,
+				5E547B141C60471800155618 /* BaseMultipleSectionTableViewController.h */,
+				5E547B151C60471800155618 /* BaseMultipleSectionTableViewController.m */,
+				5E547B161C60471800155618 /* BaseMultipleSectionTableViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -376,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E58A89E1C5858950080860A /* HomeInfoController.xib in Resources */,
+				5E547B181C60471800155618 /* BaseMultipleSectionTableViewController.xib in Resources */,
 				5E6424F81C576ECC009990E6 /* HomTabBarController.xib in Resources */,
 				5E6424E81C5763ED009990E6 /* BaseNavigationController.xib in Resources */,
 				5E6424F31C576E96009990E6 /* BaseTabBarController.xib in Resources */,
@@ -467,6 +476,7 @@
 				5E6424F21C576E96009990E6 /* BaseTabBarController.m in Sources */,
 				5E6424FC1C57722F009990E6 /* PersonalViewController.m in Sources */,
 				5E58A8A21C5858C10080860A /* PersonalInfoViewController.m in Sources */,
+				5E547B171C60471800155618 /* BaseMultipleSectionTableViewController.m in Sources */,
 				5E588C381C55FC4000AD1C16 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

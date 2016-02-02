@@ -20,7 +20,7 @@
     // Do any additional setup after loading the view from its nib.
     
 //    self.title = @"ffff";
-//    self.navigationItem.title = @"ffff";
+    self.navigationItem.title = @"发现频道";
 
     NSLog(@"%@",self.navigationController);
     

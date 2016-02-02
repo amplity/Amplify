@@ -52,8 +52,6 @@
 //    
 //    self.navigationItem.titleView = homeTitleView;
 //    self.navigationItem.leftBarButtonItem.tintColor = [UIColor greenColor];
-    
-    self.navigationController.navigationBar.barTintColor = [UIColor greenColor];
 }
 
 
@@ -91,6 +89,12 @@
     self.navigationController.navigationBar.barTintColor = nil;
     
     [super viewWillDisappear:animated];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    self.navigationController.navigationBar.barTintColor = [UIColor greenColor];
+    
+    [super viewWillAppear:animated];
 }
 
 
