@@ -28,11 +28,11 @@
 
 #pragma -mark 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [self.dataSource[section] count];
+    return [self.baseDataSource[section] count];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return self.dataSource.count;
+    return self.baseDataSource.count;
 }
 
 

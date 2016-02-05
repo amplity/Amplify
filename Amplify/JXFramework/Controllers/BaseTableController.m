@@ -15,11 +15,11 @@
 @implementation BaseTableController
 
 #pragma mark - Propertys
--(NSMutableArray*)dataSource{
-    if (nil == _dataSource) {
-        _dataSource = [[NSMutableArray alloc] initWithCapacity:1];
+-(NSMutableArray*)baseDataSource{
+    if (nil == _baseDataSource) {
+        _baseDataSource = [[NSMutableArray alloc] initWithCapacity:1];
     }
-    return _dataSource;
+    return _baseDataSource;
 }
 
 #pragma mark - life cycle
@@ -34,6 +34,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    //刷新down
+    MJRefreshNormalHeader * normalHeader = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(goDownRefresh)];
+    self.tableview.mj_header = normalHeader;
+    
+    //刷新up
+    MJRefreshAutoNormalFooter * autoFooter = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(goUpRefresh)];
+    self.tableview.mj_footer = autoFooter;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,17 +50,51 @@
 }
 
 -(void)dealloc{
-    self.dataSource = nil;
+    self.baseDataSource = nil;
     self.tableview = nil;
     self.tableview.dataSource = nil;
     self.tableview.delegate = nil;
 }
 
+#pragma -mark public
+-(void)onGoUpRefresh:(UpRefreshBlock)block{
+    //subClass
+}
+
+-(void)onGoDownRefresh:(DownRefreshBlock)block{
+    //subClass
+}
+
+#pragma -mark mjrefresh private
+-(void)goDownRefresh{
+    
+    [self onGoDownRefresh:^{
+        [self.tableview.mj_header endRefreshing];
+        [self.tableview.mj_footer resetNoMoreData];
+        DLog(@"下拉刷新成功");
+    }];
+    
+    
+}
+
+-(void)goUpRefresh{
+    
+    
+    [self onGoUpRefresh:^(BOOL hasNewData) {
+        if (hasNewData) {
+            [self.tableview.mj_footer endRefreshingWithNoMoreData];
+            DLog(@"上拉刷新成功");
+        }else{
+            [self.tableview.mj_footer endRefreshing];
+            DLog(@"上拉刷新成功");
+        }
+    }];
+}
 
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.dataSource.count;
+    return self.baseDataSource.count;
 }
 
 // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:

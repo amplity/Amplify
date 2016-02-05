@@ -7,6 +7,7 @@
 //
 
 #import "PersonalViewController.h"
+#import "HomeInfoController.h"
 
 @interface PersonalViewController ()
 
@@ -28,5 +29,9 @@
 
 
 - (IBAction)nextClick:(id)sender {
+    
+    HomeInfoController * homeInfoController = [[HomeInfoController alloc] init];
+    
+    [self.navigationController pushViewController:homeInfoController animated:YES];
 }
 @end
