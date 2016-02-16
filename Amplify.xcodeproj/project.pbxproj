@@ -11,6 +11,13 @@
 		5E0538641C589A8C00CF8317 /* BaseTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E0538621C589A8C00CF8317 /* BaseTableController.xib */; };
 		5E547B171C60471800155618 /* BaseMultipleSectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E547B151C60471800155618 /* BaseMultipleSectionTableViewController.m */; };
 		5E547B181C60471800155618 /* BaseMultipleSectionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E547B161C60471800155618 /* BaseMultipleSectionTableViewController.xib */; };
+		5E557CEB1C71749E002C1674 /* SwipePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E557CE91C71749E002C1674 /* SwipePageViewController.m */; };
+		5E557CEF1C718027002C1674 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E557CEE1C718027002C1674 /* MoreViewController.m */; };
+		5E557CF31C719F2D002C1674 /* BaseWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E557CF21C719F2D002C1674 /* BaseWebView.m */; };
+		5E557CF71C719F48002C1674 /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E557CF51C719F48002C1674 /* BaseWebViewController.m */; };
+		5E557CF81C719F48002C1674 /* BaseWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E557CF61C719F48002C1674 /* BaseWebViewController.xib */; };
+		5E557CFC1C71C3F1002C1674 /* BaseSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E557CFA1C71C3F1002C1674 /* BaseSearchViewController.m */; };
+		5E557CFD1C71C3F1002C1674 /* BaseSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E557CFB1C71C3F1002C1674 /* BaseSearchViewController.xib */; };
 		5E559BE91C61DF00009F3078 /* BaseServicesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E559BE81C61DF00009F3078 /* BaseServicesManager.m */; };
 		5E559BEC1C61F57E009F3078 /* BaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E559BEB1C61F57E009F3078 /* BaseService.m */; };
 		5E588C381C55FC4000AD1C16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E588C371C55FC4000AD1C16 /* main.m */; };
@@ -41,6 +48,12 @@
 		5E6424E81C5763ED009990E6 /* BaseNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E6424E61C5763ED009990E6 /* BaseNavigationController.xib */; };
 		5E6424F21C576E96009990E6 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6424F01C576E96009990E6 /* BaseTabBarController.m */; };
 		5E6424F31C576E96009990E6 /* BaseTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E6424F11C576E96009990E6 /* BaseTabBarController.xib */; };
+		5E673ADD1C701C8F00CA93BB /* BootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E673ADB1C701C8F00CA93BB /* BootViewController.m */; };
+		5E673ADE1C701C8F00CA93BB /* BootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E673ADC1C701C8F00CA93BB /* BootViewController.xib */; };
+		5E673AE21C7028CA00CA93BB /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E673AE11C7028CA00CA93BB /* UserManager.m */; };
+		5E673AE61C705F8C00CA93BB /* ScrollAutoImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E673AE51C705F8C00CA93BB /* ScrollAutoImageView.m */; };
+		5E673AEB1C7074B500CA93BB /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E673AE91C7074B500CA93BB /* SwipeViewController.m */; };
+		5E673AEC1C7074B500CA93BB /* SwipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E673AEA1C7074B500CA93BB /* SwipeViewController.xib */; };
 		FEBEAF2B1E199361DDC886E2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7895FFC1F83517A018AEAA1C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +81,18 @@
 		5E547B141C60471800155618 /* BaseMultipleSectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMultipleSectionTableViewController.h; sourceTree = "<group>"; };
 		5E547B151C60471800155618 /* BaseMultipleSectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMultipleSectionTableViewController.m; sourceTree = "<group>"; };
 		5E547B161C60471800155618 /* BaseMultipleSectionTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseMultipleSectionTableViewController.xib; sourceTree = "<group>"; };
+		5E557CE81C71749E002C1674 /* SwipePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipePageViewController.h; sourceTree = "<group>"; };
+		5E557CE91C71749E002C1674 /* SwipePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipePageViewController.m; sourceTree = "<group>"; };
+		5E557CED1C718027002C1674 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		5E557CEE1C718027002C1674 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		5E557CF11C719F2D002C1674 /* BaseWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebView.h; sourceTree = "<group>"; };
+		5E557CF21C719F2D002C1674 /* BaseWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebView.m; sourceTree = "<group>"; };
+		5E557CF41C719F48002C1674 /* BaseWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebViewController.h; sourceTree = "<group>"; };
+		5E557CF51C719F48002C1674 /* BaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebViewController.m; sourceTree = "<group>"; };
+		5E557CF61C719F48002C1674 /* BaseWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseWebViewController.xib; sourceTree = "<group>"; };
+		5E557CF91C71C3F1002C1674 /* BaseSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSearchViewController.h; sourceTree = "<group>"; };
+		5E557CFA1C71C3F1002C1674 /* BaseSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSearchViewController.m; sourceTree = "<group>"; };
+		5E557CFB1C71C3F1002C1674 /* BaseSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseSearchViewController.xib; sourceTree = "<group>"; };
 		5E559BE71C61DF00009F3078 /* BaseServicesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseServicesManager.h; sourceTree = "<group>"; };
 		5E559BE81C61DF00009F3078 /* BaseServicesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseServicesManager.m; sourceTree = "<group>"; };
 		5E559BEA1C61F57E009F3078 /* BaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseService.h; sourceTree = "<group>"; };
@@ -123,6 +148,16 @@
 		5E6424EF1C576E96009990E6 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
 		5E6424F01C576E96009990E6 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 		5E6424F11C576E96009990E6 /* BaseTabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseTabBarController.xib; sourceTree = "<group>"; };
+		5E673ADA1C701C8F00CA93BB /* BootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootViewController.h; sourceTree = "<group>"; };
+		5E673ADB1C701C8F00CA93BB /* BootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootViewController.m; sourceTree = "<group>"; };
+		5E673ADC1C701C8F00CA93BB /* BootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BootViewController.xib; sourceTree = "<group>"; };
+		5E673AE01C7028CA00CA93BB /* UserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
+		5E673AE11C7028CA00CA93BB /* UserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
+		5E673AE41C705F8C00CA93BB /* ScrollAutoImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollAutoImageView.h; sourceTree = "<group>"; };
+		5E673AE51C705F8C00CA93BB /* ScrollAutoImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollAutoImageView.m; sourceTree = "<group>"; };
+		5E673AE81C7074B500CA93BB /* SwipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeViewController.h; sourceTree = "<group>"; };
+		5E673AE91C7074B500CA93BB /* SwipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeViewController.m; sourceTree = "<group>"; };
+		5E673AEA1C7074B500CA93BB /* SwipeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwipeViewController.xib; sourceTree = "<group>"; };
 		64CD2F92DEFC0F5156370E14 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7895FFC1F83517A018AEAA1C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EA228AC680DD29A2228CB4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +189,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E557CF01C719EFF002C1674 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				5E557CF11C719F2D002C1674 /* BaseWebView.h */,
+				5E557CF21C719F2D002C1674 /* BaseWebView.m */,
+				5E557CF41C719F48002C1674 /* BaseWebViewController.h */,
+				5E557CF51C719F48002C1674 /* BaseWebViewController.m */,
+				5E557CF61C719F48002C1674 /* BaseWebViewController.xib */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
 		5E559BE61C61A236009F3078 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +358,7 @@
 		5E6424DD1C576318009990E6 /* JXFramework */ = {
 			isa = PBXGroup;
 			children = (
+				5E673ADF1C70286D00CA93BB /* User */,
 				5E5A7EB31C633DBA0052935B /* DB */,
 				5E5A7E871C62E5150052935B /* Data */,
 				5E5A7E861C62E5090052935B /* Model */,
@@ -324,6 +372,10 @@
 		5E6424DE1C57633A009990E6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5E557CF01C719EFF002C1674 /* WebView */,
+				5E673AE71C70748900CA93BB /* SwipeViewController */,
+				5E673AE31C705F6F00CA93BB /* ScrollImageView */,
+				5E673AD91C701C3F00CA93BB /* Boot */,
 				5E6424DF1C57636A009990E6 /* BaseViewController.h */,
 				5E6424E01C57636A009990E6 /* BaseViewController.m */,
 				5E6424E11C57636A009990E6 /* BaseViewController.xib */,
@@ -339,8 +391,53 @@
 				5E547B141C60471800155618 /* BaseMultipleSectionTableViewController.h */,
 				5E547B151C60471800155618 /* BaseMultipleSectionTableViewController.m */,
 				5E547B161C60471800155618 /* BaseMultipleSectionTableViewController.xib */,
+				5E557CF91C71C3F1002C1674 /* BaseSearchViewController.h */,
+				5E557CFA1C71C3F1002C1674 /* BaseSearchViewController.m */,
+				5E557CFB1C71C3F1002C1674 /* BaseSearchViewController.xib */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5E673AD91C701C3F00CA93BB /* Boot */ = {
+			isa = PBXGroup;
+			children = (
+				5E673ADA1C701C8F00CA93BB /* BootViewController.h */,
+				5E673ADB1C701C8F00CA93BB /* BootViewController.m */,
+				5E673ADC1C701C8F00CA93BB /* BootViewController.xib */,
+			);
+			path = Boot;
+			sourceTree = "<group>";
+		};
+		5E673ADF1C70286D00CA93BB /* User */ = {
+			isa = PBXGroup;
+			children = (
+				5E673AE01C7028CA00CA93BB /* UserManager.h */,
+				5E673AE11C7028CA00CA93BB /* UserManager.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		5E673AE31C705F6F00CA93BB /* ScrollImageView */ = {
+			isa = PBXGroup;
+			children = (
+				5E673AE41C705F8C00CA93BB /* ScrollAutoImageView.h */,
+				5E673AE51C705F8C00CA93BB /* ScrollAutoImageView.m */,
+			);
+			path = ScrollImageView;
+			sourceTree = "<group>";
+		};
+		5E673AE71C70748900CA93BB /* SwipeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5E673AE81C7074B500CA93BB /* SwipeViewController.h */,
+				5E673AE91C7074B500CA93BB /* SwipeViewController.m */,
+				5E673AEA1C7074B500CA93BB /* SwipeViewController.xib */,
+				5E557CE81C71749E002C1674 /* SwipePageViewController.h */,
+				5E557CE91C71749E002C1674 /* SwipePageViewController.m */,
+				5E557CED1C718027002C1674 /* MoreViewController.h */,
+				5E557CEE1C718027002C1674 /* MoreViewController.m */,
+			);
+			path = SwipeViewController;
 			sourceTree = "<group>";
 		};
 		93F0044E9200DEDDBBA96529 /* Pods */ = {
@@ -469,13 +566,17 @@
 				5E5A7EAC1C62F2510052935B /* HomTabBarController.xib in Resources */,
 				5E547B181C60471800155618 /* BaseMultipleSectionTableViewController.xib in Resources */,
 				5E6424E81C5763ED009990E6 /* BaseNavigationController.xib in Resources */,
+				5E673ADE1C701C8F00CA93BB /* BootViewController.xib in Resources */,
 				5E5A7E9B1C62F1880052935B /* HomeInfoController.xib in Resources */,
+				5E557CF81C719F48002C1674 /* BaseWebViewController.xib in Resources */,
 				5E6424F31C576E96009990E6 /* BaseTabBarController.xib in Resources */,
 				5E5A7E9F1C62F1880052935B /* TestViewController.xib in Resources */,
+				5E673AEC1C7074B500CA93BB /* SwipeViewController.xib in Resources */,
 				5E588C431C55FC4000AD1C16 /* Assets.xcassets in Resources */,
 				5E6424E31C57636A009990E6 /* BaseViewController.xib in Resources */,
 				5E5A7EAA1C62F2510052935B /* HomeViewController.xib in Resources */,
 				5E5A7E9D1C62F1880052935B /* PersonalInfoViewController.xib in Resources */,
+				5E557CFD1C71C3F1002C1674 /* BaseSearchViewController.xib in Resources */,
 				5E5A7EAE1C62F2510052935B /* PersonalViewController.xib in Resources */,
 				5E0538641C589A8C00CF8317 /* BaseTableController.xib in Resources */,
 			);
@@ -554,8 +655,10 @@
 				5E5A7E8A1C62E5230052935B /* BaseModel.m in Sources */,
 				5E5A7E9E1C62F1880052935B /* TestViewController.m in Sources */,
 				5E588C3B1C55FC4000AD1C16 /* AppDelegate.m in Sources */,
+				5E673AE21C7028CA00CA93BB /* UserManager.m in Sources */,
 				5E5A7EAB1C62F2510052935B /* HomTabBarController.m in Sources */,
 				5E6424E21C57636A009990E6 /* BaseViewController.m in Sources */,
+				5E557CEF1C718027002C1674 /* MoreViewController.m in Sources */,
 				5E5A7E9A1C62F1880052935B /* HomeInfoController.m in Sources */,
 				5E5A7E8D1C62E5680052935B /* BaseData.m in Sources */,
 				5E5A7EB61C633DE00052935B /* DBManager.m in Sources */,
@@ -563,12 +666,19 @@
 				5E0538631C589A8C00CF8317 /* BaseTableController.m in Sources */,
 				5E5A7EA91C62F2510052935B /* HomeViewController.m in Sources */,
 				5E559BE91C61DF00009F3078 /* BaseServicesManager.m in Sources */,
+				5E673AE61C705F8C00CA93BB /* ScrollAutoImageView.m in Sources */,
+				5E673AEB1C7074B500CA93BB /* SwipeViewController.m in Sources */,
 				5E6424F21C576E96009990E6 /* BaseTabBarController.m in Sources */,
 				5E5A7EB91C633FAB0052935B /* BaseDbData.m in Sources */,
+				5E557CFC1C71C3F1002C1674 /* BaseSearchViewController.m in Sources */,
 				5E547B171C60471800155618 /* BaseMultipleSectionTableViewController.m in Sources */,
+				5E557CEB1C71749E002C1674 /* SwipePageViewController.m in Sources */,
 				5E5A7E9C1C62F1880052935B /* PersonalInfoViewController.m in Sources */,
+				5E557CF71C719F48002C1674 /* BaseWebViewController.m in Sources */,
+				5E673ADD1C701C8F00CA93BB /* BootViewController.m in Sources */,
 				5E5A7EAD1C62F2510052935B /* PersonalViewController.m in Sources */,
 				5E588C381C55FC4000AD1C16 /* main.m in Sources */,
+				5E557CF31C719F2D002C1674 /* BaseWebView.m in Sources */,
 				5E559BEC1C61F57E009F3078 /* BaseService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HomeViewController.h"
 #import "HomTabBarController.h"
+#import "BootViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,12 +28,19 @@
 
 
 -(void)setupAppInit{
-    HomTabBarController * homTabBarController = [[HomTabBarController alloc] init];
+    
+    UIViewController * startViewController = nil;
+    
+    if (/* DISABLES CODE */ (1)) {
+        startViewController = [[HomTabBarController alloc] init];
+    }else{
+        startViewController = [[BootViewController alloc] init];
+    }
     
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = homTabBarController;
+    self.window.rootViewController = startViewController;
     [self.window makeKeyAndVisible];
 }
 
