@@ -14,6 +14,15 @@
 
 @implementation BaseSearchViewController
 
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.mySearchController.searchBar becomeFirstResponder];
+    });
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -40,17 +49,16 @@
     _mySearchController.searchResultsUpdater = self;
     _mySearchController.dimsBackgroundDuringPresentation = NO;
     [_mySearchController.searchBar sizeToFit];
-    [self performSelector:@selector(setCorrectFocus) withObject:NULL afterDelay:1];
-//    [self.mySearchController.searchBar becomeFirstResponder];
+    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [self.mySearchController.searchBar becomeFirstResponder];
+//    });
     
     self.myTableView.tableHeaderView = self.mySearchController.searchBar;
     self.mySearchController.searchBar.delegate = self;
     
 }
 
--(void) setCorrectFocus {
-    [self.mySearchController.searchBar becomeFirstResponder];
-}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (!_visableArray || _visableArray.count == 0) {

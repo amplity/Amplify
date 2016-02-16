@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5E0538631C589A8C00CF8317 /* BaseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0538611C589A8C00CF8317 /* BaseTableController.m */; };
 		5E0538641C589A8C00CF8317 /* BaseTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E0538621C589A8C00CF8317 /* BaseTableController.xib */; };
+		5E5322011C73273F008C0AC9 /* BaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5321FF1C73273F008C0AC9 /* BaseTableCell.m */; };
+		5E5322021C73273F008C0AC9 /* BaseTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5322001C73273F008C0AC9 /* BaseTableCell.xib */; };
 		5E547B171C60471800155618 /* BaseMultipleSectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E547B151C60471800155618 /* BaseMultipleSectionTableViewController.m */; };
 		5E547B181C60471800155618 /* BaseMultipleSectionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E547B161C60471800155618 /* BaseMultipleSectionTableViewController.xib */; };
 		5E557CEB1C71749E002C1674 /* SwipePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E557CE91C71749E002C1674 /* SwipePageViewController.m */; };
@@ -78,6 +80,9 @@
 		5E0538601C589A8C00CF8317 /* BaseTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableController.h; sourceTree = "<group>"; };
 		5E0538611C589A8C00CF8317 /* BaseTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableController.m; sourceTree = "<group>"; };
 		5E0538621C589A8C00CF8317 /* BaseTableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseTableController.xib; sourceTree = "<group>"; };
+		5E5321FE1C73273F008C0AC9 /* BaseTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableCell.h; sourceTree = "<group>"; };
+		5E5321FF1C73273F008C0AC9 /* BaseTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableCell.m; sourceTree = "<group>"; };
+		5E5322001C73273F008C0AC9 /* BaseTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseTableCell.xib; sourceTree = "<group>"; };
 		5E547B141C60471800155618 /* BaseMultipleSectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMultipleSectionTableViewController.h; sourceTree = "<group>"; };
 		5E547B151C60471800155618 /* BaseMultipleSectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMultipleSectionTableViewController.m; sourceTree = "<group>"; };
 		5E547B161C60471800155618 /* BaseMultipleSectionTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseMultipleSectionTableViewController.xib; sourceTree = "<group>"; };
@@ -189,6 +194,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E5321F71C7326D4008C0AC9 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				5E5321F81C732703008C0AC9 /* Cell */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		5E5321F81C732703008C0AC9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5E5321FE1C73273F008C0AC9 /* BaseTableCell.h */,
+				5E5321FF1C73273F008C0AC9 /* BaseTableCell.m */,
+				5E5322001C73273F008C0AC9 /* BaseTableCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		5E557CF01C719EFF002C1674 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
@@ -372,6 +395,7 @@
 		5E6424DE1C57633A009990E6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5E5321F71C7326D4008C0AC9 /* Table */,
 				5E557CF01C719EFF002C1674 /* WebView */,
 				5E673AE71C70748900CA93BB /* SwipeViewController */,
 				5E673AE31C705F6F00CA93BB /* ScrollImageView */,
@@ -563,6 +587,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5322021C73273F008C0AC9 /* BaseTableCell.xib in Resources */,
 				5E5A7EAC1C62F2510052935B /* HomTabBarController.xib in Resources */,
 				5E547B181C60471800155618 /* BaseMultipleSectionTableViewController.xib in Resources */,
 				5E6424E81C5763ED009990E6 /* BaseNavigationController.xib in Resources */,
@@ -654,6 +679,7 @@
 				5E6424E71C5763ED009990E6 /* BaseNavigationController.m in Sources */,
 				5E5A7E8A1C62E5230052935B /* BaseModel.m in Sources */,
 				5E5A7E9E1C62F1880052935B /* TestViewController.m in Sources */,
+				5E5322011C73273F008C0AC9 /* BaseTableCell.m in Sources */,
 				5E588C3B1C55FC4000AD1C16 /* AppDelegate.m in Sources */,
 				5E673AE21C7028CA00CA93BB /* UserManager.m in Sources */,
 				5E5A7EAB1C62F2510052935B /* HomTabBarController.m in Sources */,

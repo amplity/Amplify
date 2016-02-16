@@ -20,6 +20,11 @@ typedef void(^UpRefreshBlock)(BOOL hasNewData);
 @property (nonatomic, strong) NSMutableArray *baseDataSource;
 
 /**
+ *  cell组
+ */
+@property (nonatomic, strong) NSMutableArray *cellStyles;
+
+/**
  *  下拉刷新
  *
  *  @param block 下拉完成block
@@ -33,5 +38,11 @@ typedef void(^UpRefreshBlock)(BOOL hasNewData);
  *  @param block 上拉完成block
  */
 -(void)onGoUpRefresh:(UpRefreshBlock)block;
+
+
+/**
+ *  加载数据
+ */
+-(void)initData;
 
 @end

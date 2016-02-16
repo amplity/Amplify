@@ -7,6 +7,7 @@
 //
 
 #import "BaseTableController.h"
+#import "BaseTableCell.h"
 
 @interface BaseTableController ()
 
@@ -22,6 +23,17 @@
     return _baseDataSource;
 }
 
+-(NSMutableArray*)cellStyles{
+    if (nil == _cellStyles) {
+        _cellStyles = [[NSMutableArray alloc] initWithCapacity:1];
+    }
+    return _cellStyles;
+}
+
+-(void)initData{
+    
+}
+
 #pragma mark - life cycle
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -34,6 +46,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [self initData];
     
     //刷新down
     MJRefreshNormalHeader * normalHeader = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(goDownRefresh)];
@@ -109,6 +123,12 @@
 #pragma mark - UITableViewDelegate
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    BaseTableCell * baseTableCell = [_cellStyles objectAtIndex:indexPath.row];
+    
+    return baseTableCell.height;
 }
 
 @end
