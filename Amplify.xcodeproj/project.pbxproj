@@ -11,6 +11,13 @@
 		5E0538641C589A8C00CF8317 /* BaseTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E0538621C589A8C00CF8317 /* BaseTableController.xib */; };
 		5E5322011C73273F008C0AC9 /* BaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5321FF1C73273F008C0AC9 /* BaseTableCell.m */; };
 		5E5322021C73273F008C0AC9 /* BaseTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5322001C73273F008C0AC9 /* BaseTableCell.xib */; };
+		5E5322071C740DB0008C0AC9 /* KCContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5322061C740DB0008C0AC9 /* KCContact.m */; };
+		5E53220A1C740DFB008C0AC9 /* KCContactGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5322091C740DFB008C0AC9 /* KCContactGroup.m */; };
+		5E53220E1C740E3C008C0AC9 /* KCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E53220C1C740E3C008C0AC9 /* KCMainViewController.m */; };
+		5E53220F1C740E3C008C0AC9 /* KCMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E53220D1C740E3C008C0AC9 /* KCMainViewController.xib */; };
+		5E5322131C74559A008C0AC9 /* DrogImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5322121C745599008C0AC9 /* DrogImageView.m */; };
+		5E5322181C745BF2008C0AC9 /* BasketBallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5322161C745BF2008C0AC9 /* BasketBallViewController.m */; };
+		5E5322191C745BF2008C0AC9 /* BasketBallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5322171C745BF2008C0AC9 /* BasketBallViewController.xib */; };
 		5E547B171C60471800155618 /* BaseMultipleSectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E547B151C60471800155618 /* BaseMultipleSectionTableViewController.m */; };
 		5E547B181C60471800155618 /* BaseMultipleSectionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E547B161C60471800155618 /* BaseMultipleSectionTableViewController.xib */; };
 		5E557CEB1C71749E002C1674 /* SwipePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E557CE91C71749E002C1674 /* SwipePageViewController.m */; };
@@ -83,6 +90,18 @@
 		5E5321FE1C73273F008C0AC9 /* BaseTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableCell.h; sourceTree = "<group>"; };
 		5E5321FF1C73273F008C0AC9 /* BaseTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableCell.m; sourceTree = "<group>"; };
 		5E5322001C73273F008C0AC9 /* BaseTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseTableCell.xib; sourceTree = "<group>"; };
+		5E5322051C740DB0008C0AC9 /* KCContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCContact.h; sourceTree = "<group>"; };
+		5E5322061C740DB0008C0AC9 /* KCContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCContact.m; sourceTree = "<group>"; };
+		5E5322081C740DFB008C0AC9 /* KCContactGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCContactGroup.h; sourceTree = "<group>"; };
+		5E5322091C740DFB008C0AC9 /* KCContactGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCContactGroup.m; sourceTree = "<group>"; };
+		5E53220B1C740E3C008C0AC9 /* KCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCMainViewController.h; sourceTree = "<group>"; };
+		5E53220C1C740E3C008C0AC9 /* KCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCMainViewController.m; sourceTree = "<group>"; };
+		5E53220D1C740E3C008C0AC9 /* KCMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KCMainViewController.xib; sourceTree = "<group>"; };
+		5E5322111C745599008C0AC9 /* DrogImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrogImageView.h; sourceTree = "<group>"; };
+		5E5322121C745599008C0AC9 /* DrogImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrogImageView.m; sourceTree = "<group>"; };
+		5E5322151C745BF2008C0AC9 /* BasketBallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasketBallViewController.h; sourceTree = "<group>"; };
+		5E5322161C745BF2008C0AC9 /* BasketBallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasketBallViewController.m; sourceTree = "<group>"; };
+		5E5322171C745BF2008C0AC9 /* BasketBallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasketBallViewController.xib; sourceTree = "<group>"; };
 		5E547B141C60471800155618 /* BaseMultipleSectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMultipleSectionTableViewController.h; sourceTree = "<group>"; };
 		5E547B151C60471800155618 /* BaseMultipleSectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMultipleSectionTableViewController.m; sourceTree = "<group>"; };
 		5E547B161C60471800155618 /* BaseMultipleSectionTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseMultipleSectionTableViewController.xib; sourceTree = "<group>"; };
@@ -210,6 +229,48 @@
 				5E5322001C73273F008C0AC9 /* BaseTableCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		5E5322031C740D3A008C0AC9 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				5E5322141C745BDB008C0AC9 /* Basketball */,
+				5E5322041C740D71008C0AC9 /* Contact */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		5E5322041C740D71008C0AC9 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				5E5322051C740DB0008C0AC9 /* KCContact.h */,
+				5E5322061C740DB0008C0AC9 /* KCContact.m */,
+				5E5322081C740DFB008C0AC9 /* KCContactGroup.h */,
+				5E5322091C740DFB008C0AC9 /* KCContactGroup.m */,
+				5E53220B1C740E3C008C0AC9 /* KCMainViewController.h */,
+				5E53220C1C740E3C008C0AC9 /* KCMainViewController.m */,
+				5E53220D1C740E3C008C0AC9 /* KCMainViewController.xib */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		5E5322101C745528008C0AC9 /* Drog */ = {
+			isa = PBXGroup;
+			children = (
+				5E5322111C745599008C0AC9 /* DrogImageView.h */,
+				5E5322121C745599008C0AC9 /* DrogImageView.m */,
+			);
+			path = Drog;
+			sourceTree = "<group>";
+		};
+		5E5322141C745BDB008C0AC9 /* Basketball */ = {
+			isa = PBXGroup;
+			children = (
+				5E5322151C745BF2008C0AC9 /* BasketBallViewController.h */,
+				5E5322161C745BF2008C0AC9 /* BasketBallViewController.m */,
+				5E5322171C745BF2008C0AC9 /* BasketBallViewController.xib */,
+			);
+			path = Basketball;
 			sourceTree = "<group>";
 		};
 		5E557CF01C719EFF002C1674 /* WebView */ = {
@@ -395,6 +456,8 @@
 		5E6424DE1C57633A009990E6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5E5322101C745528008C0AC9 /* Drog */,
+				5E5322031C740D3A008C0AC9 /* Example */,
 				5E5321F71C7326D4008C0AC9 /* Table */,
 				5E557CF01C719EFF002C1674 /* WebView */,
 				5E673AE71C70748900CA93BB /* SwipeViewController */,
@@ -596,10 +659,12 @@
 				5E557CF81C719F48002C1674 /* BaseWebViewController.xib in Resources */,
 				5E6424F31C576E96009990E6 /* BaseTabBarController.xib in Resources */,
 				5E5A7E9F1C62F1880052935B /* TestViewController.xib in Resources */,
+				5E5322191C745BF2008C0AC9 /* BasketBallViewController.xib in Resources */,
 				5E673AEC1C7074B500CA93BB /* SwipeViewController.xib in Resources */,
 				5E588C431C55FC4000AD1C16 /* Assets.xcassets in Resources */,
 				5E6424E31C57636A009990E6 /* BaseViewController.xib in Resources */,
 				5E5A7EAA1C62F2510052935B /* HomeViewController.xib in Resources */,
+				5E53220F1C740E3C008C0AC9 /* KCMainViewController.xib in Resources */,
 				5E5A7E9D1C62F1880052935B /* PersonalInfoViewController.xib in Resources */,
 				5E557CFD1C71C3F1002C1674 /* BaseSearchViewController.xib in Resources */,
 				5E5A7EAE1C62F2510052935B /* PersonalViewController.xib in Resources */,
@@ -690,9 +755,13 @@
 				5E5A7EB61C633DE00052935B /* DBManager.m in Sources */,
 				5E5A7EB21C62F2DC0052935B /* HomeModel.m in Sources */,
 				5E0538631C589A8C00CF8317 /* BaseTableController.m in Sources */,
+				5E53220E1C740E3C008C0AC9 /* KCMainViewController.m in Sources */,
+				5E5322181C745BF2008C0AC9 /* BasketBallViewController.m in Sources */,
+				5E5322071C740DB0008C0AC9 /* KCContact.m in Sources */,
 				5E5A7EA91C62F2510052935B /* HomeViewController.m in Sources */,
 				5E559BE91C61DF00009F3078 /* BaseServicesManager.m in Sources */,
 				5E673AE61C705F8C00CA93BB /* ScrollAutoImageView.m in Sources */,
+				5E53220A1C740DFB008C0AC9 /* KCContactGroup.m in Sources */,
 				5E673AEB1C7074B500CA93BB /* SwipeViewController.m in Sources */,
 				5E6424F21C576E96009990E6 /* BaseTabBarController.m in Sources */,
 				5E5A7EB91C633FAB0052935B /* BaseDbData.m in Sources */,
@@ -705,6 +774,7 @@
 				5E5A7EAD1C62F2510052935B /* PersonalViewController.m in Sources */,
 				5E588C381C55FC4000AD1C16 /* main.m in Sources */,
 				5E557CF31C719F2D002C1674 /* BaseWebView.m in Sources */,
+				5E5322131C74559A008C0AC9 /* DrogImageView.m in Sources */,
 				5E559BEC1C61F57E009F3078 /* BaseService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
