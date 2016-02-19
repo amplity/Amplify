@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5E0538631C589A8C00CF8317 /* BaseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0538611C589A8C00CF8317 /* BaseTableController.m */; };
 		5E0538641C589A8C00CF8317 /* BaseTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E0538621C589A8C00CF8317 /* BaseTableController.xib */; };
+		5E173A191C76C14900D2F0D7 /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E173A181C76C14900D2F0D7 /* CacheManager.m */; };
 		5E5322011C73273F008C0AC9 /* BaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5321FF1C73273F008C0AC9 /* BaseTableCell.m */; };
 		5E5322021C73273F008C0AC9 /* BaseTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5322001C73273F008C0AC9 /* BaseTableCell.xib */; };
 		5E5322071C740DB0008C0AC9 /* KCContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5322061C740DB0008C0AC9 /* KCContact.m */; };
@@ -18,6 +19,7 @@
 		5E5322131C74559A008C0AC9 /* DrogImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5322121C745599008C0AC9 /* DrogImageView.m */; };
 		5E5322181C745BF2008C0AC9 /* BasketBallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5322161C745BF2008C0AC9 /* BasketBallViewController.m */; };
 		5E5322191C745BF2008C0AC9 /* BasketBallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5322171C745BF2008C0AC9 /* BasketBallViewController.xib */; };
+		5E53221D1C76A72E008C0AC9 /* UtilsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E53221C1C76A72E008C0AC9 /* UtilsManager.m */; };
 		5E547B171C60471800155618 /* BaseMultipleSectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E547B151C60471800155618 /* BaseMultipleSectionTableViewController.m */; };
 		5E547B181C60471800155618 /* BaseMultipleSectionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E547B161C60471800155618 /* BaseMultipleSectionTableViewController.xib */; };
 		5E557CEB1C71749E002C1674 /* SwipePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E557CE91C71749E002C1674 /* SwipePageViewController.m */; };
@@ -87,6 +89,8 @@
 		5E0538601C589A8C00CF8317 /* BaseTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableController.h; sourceTree = "<group>"; };
 		5E0538611C589A8C00CF8317 /* BaseTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableController.m; sourceTree = "<group>"; };
 		5E0538621C589A8C00CF8317 /* BaseTableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseTableController.xib; sourceTree = "<group>"; };
+		5E173A171C76C14900D2F0D7 /* CacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheManager.h; sourceTree = "<group>"; };
+		5E173A181C76C14900D2F0D7 /* CacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheManager.m; sourceTree = "<group>"; };
 		5E5321FE1C73273F008C0AC9 /* BaseTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableCell.h; sourceTree = "<group>"; };
 		5E5321FF1C73273F008C0AC9 /* BaseTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableCell.m; sourceTree = "<group>"; };
 		5E5322001C73273F008C0AC9 /* BaseTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseTableCell.xib; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 		5E5322151C745BF2008C0AC9 /* BasketBallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasketBallViewController.h; sourceTree = "<group>"; };
 		5E5322161C745BF2008C0AC9 /* BasketBallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasketBallViewController.m; sourceTree = "<group>"; };
 		5E5322171C745BF2008C0AC9 /* BasketBallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasketBallViewController.xib; sourceTree = "<group>"; };
+		5E53221B1C76A72E008C0AC9 /* UtilsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsManager.h; sourceTree = "<group>"; };
+		5E53221C1C76A72E008C0AC9 /* UtilsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilsManager.m; sourceTree = "<group>"; };
 		5E547B141C60471800155618 /* BaseMultipleSectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMultipleSectionTableViewController.h; sourceTree = "<group>"; };
 		5E547B151C60471800155618 /* BaseMultipleSectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMultipleSectionTableViewController.m; sourceTree = "<group>"; };
 		5E547B161C60471800155618 /* BaseMultipleSectionTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseMultipleSectionTableViewController.xib; sourceTree = "<group>"; };
@@ -213,6 +219,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E173A161C76C13100D2F0D7 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				5E173A171C76C14900D2F0D7 /* CacheManager.h */,
+				5E173A181C76C14900D2F0D7 /* CacheManager.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 		5E5321F71C7326D4008C0AC9 /* Table */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +286,15 @@
 				5E5322171C745BF2008C0AC9 /* BasketBallViewController.xib */,
 			);
 			path = Basketball;
+			sourceTree = "<group>";
+		};
+		5E53221A1C76A70E008C0AC9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5E53221B1C76A72E008C0AC9 /* UtilsManager.h */,
+				5E53221C1C76A72E008C0AC9 /* UtilsManager.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		5E557CF01C719EFF002C1674 /* WebView */ = {
@@ -442,6 +466,8 @@
 		5E6424DD1C576318009990E6 /* JXFramework */ = {
 			isa = PBXGroup;
 			children = (
+				5E173A161C76C13100D2F0D7 /* Cache */,
+				5E53221A1C76A70E008C0AC9 /* Utils */,
 				5E673ADF1C70286D00CA93BB /* User */,
 				5E5A7EB31C633DBA0052935B /* DB */,
 				5E5A7E871C62E5150052935B /* Data */,
@@ -750,6 +776,7 @@
 				5E5A7EAB1C62F2510052935B /* HomTabBarController.m in Sources */,
 				5E6424E21C57636A009990E6 /* BaseViewController.m in Sources */,
 				5E557CEF1C718027002C1674 /* MoreViewController.m in Sources */,
+				5E173A191C76C14900D2F0D7 /* CacheManager.m in Sources */,
 				5E5A7E9A1C62F1880052935B /* HomeInfoController.m in Sources */,
 				5E5A7E8D1C62E5680052935B /* BaseData.m in Sources */,
 				5E5A7EB61C633DE00052935B /* DBManager.m in Sources */,
@@ -774,6 +801,7 @@
 				5E5A7EAD1C62F2510052935B /* PersonalViewController.m in Sources */,
 				5E588C381C55FC4000AD1C16 /* main.m in Sources */,
 				5E557CF31C719F2D002C1674 /* BaseWebView.m in Sources */,
+				5E53221D1C76A72E008C0AC9 /* UtilsManager.m in Sources */,
 				5E5322131C74559A008C0AC9 /* DrogImageView.m in Sources */,
 				5E559BEC1C61F57E009F3078 /* BaseService.m in Sources */,
 			);

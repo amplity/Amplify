@@ -47,6 +47,8 @@ static BaseDbData *_db;
 
 +(void)create:(NSString*)sqlStr
 {
+    
+    // 打开数据库
     if ([_db open]) {
 //        NSString *sqlCreateTable =  [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS '%@' ('%@' INTEGER PRIMARY KEY AUTOINCREMENT, '%@' TEXT, '%@' INTEGER, '%@' TEXT)",TABLENAME,ID,NAME,AGE,ADDRESS];
         
@@ -167,5 +169,11 @@ static BaseDbData *_db;
 + (void) close {
     [_db close];
 }
+
+
+
+//---------------------------------------End----------------------------
+
+
 
 @end
