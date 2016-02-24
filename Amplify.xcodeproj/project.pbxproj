@@ -10,6 +10,17 @@
 		5E0538631C589A8C00CF8317 /* BaseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0538611C589A8C00CF8317 /* BaseTableController.m */; };
 		5E0538641C589A8C00CF8317 /* BaseTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E0538621C589A8C00CF8317 /* BaseTableController.xib */; };
 		5E173A191C76C14900D2F0D7 /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E173A181C76C14900D2F0D7 /* CacheManager.m */; };
+		5E173A1C1C7AD76100D2F0D7 /* BaseWebManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E173A1B1C7AD76100D2F0D7 /* BaseWebManager.m */; };
+		5E173A1E1C7AFBAF00D2F0D7 /* amplifyTest.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E173A1D1C7AFBAF00D2F0D7 /* amplifyTest.html */; };
+		5E173A201C7AFBB800D2F0D7 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 5E173A1F1C7AFBB800D2F0D7 /* index.js */; };
+		5E173A251C7AFC1400D2F0D7 /* TestWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E173A231C7AFC1400D2F0D7 /* TestWebViewController.m */; };
+		5E173A261C7AFC1400D2F0D7 /* TestWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E173A241C7AFC1400D2F0D7 /* TestWebViewController.xib */; };
+		5E173A321C7D589200D2F0D7 /* FTWCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E173A311C7D589200D2F0D7 /* FTWCache.m */; };
+		5E173A361C7D58B500D2F0D7 /* FTWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E173A341C7D58B500D2F0D7 /* FTWViewController.m */; };
+		5E173A371C7D58B500D2F0D7 /* FTWViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E173A351C7D58B500D2F0D7 /* FTWViewController.xib */; };
+		5E173A3A1C7D595800D2F0D7 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E173A391C7D595800D2F0D7 /* NSString+MD5.m */; };
+		5E173A3C1C7D832400D2F0D7 /* fffff.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E173A3B1C7D832400D2F0D7 /* fffff.mp3 */; };
+		5E173A431C7D928400D2F0D7 /* AmplifyCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E173A421C7D928400D2F0D7 /* AmplifyCache.m */; };
 		5E5322011C73273F008C0AC9 /* BaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5321FF1C73273F008C0AC9 /* BaseTableCell.m */; };
 		5E5322021C73273F008C0AC9 /* BaseTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5322001C73273F008C0AC9 /* BaseTableCell.xib */; };
 		5E5322071C740DB0008C0AC9 /* KCContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5322061C740DB0008C0AC9 /* KCContact.m */; };
@@ -91,6 +102,23 @@
 		5E0538621C589A8C00CF8317 /* BaseTableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseTableController.xib; sourceTree = "<group>"; };
 		5E173A171C76C14900D2F0D7 /* CacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheManager.h; sourceTree = "<group>"; };
 		5E173A181C76C14900D2F0D7 /* CacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheManager.m; sourceTree = "<group>"; };
+		5E173A1A1C7AD76100D2F0D7 /* BaseWebManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebManager.h; sourceTree = "<group>"; };
+		5E173A1B1C7AD76100D2F0D7 /* BaseWebManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebManager.m; sourceTree = "<group>"; };
+		5E173A1D1C7AFBAF00D2F0D7 /* amplifyTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = amplifyTest.html; sourceTree = "<group>"; };
+		5E173A1F1C7AFBB800D2F0D7 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		5E173A221C7AFC1400D2F0D7 /* TestWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestWebViewController.h; sourceTree = "<group>"; };
+		5E173A231C7AFC1400D2F0D7 /* TestWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWebViewController.m; sourceTree = "<group>"; };
+		5E173A241C7AFC1400D2F0D7 /* TestWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestWebViewController.xib; sourceTree = "<group>"; };
+		5E173A301C7D589200D2F0D7 /* FTWCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTWCache.h; sourceTree = "<group>"; };
+		5E173A311C7D589200D2F0D7 /* FTWCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTWCache.m; sourceTree = "<group>"; };
+		5E173A331C7D58B500D2F0D7 /* FTWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTWViewController.h; sourceTree = "<group>"; };
+		5E173A341C7D58B500D2F0D7 /* FTWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTWViewController.m; sourceTree = "<group>"; };
+		5E173A351C7D58B500D2F0D7 /* FTWViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTWViewController.xib; sourceTree = "<group>"; };
+		5E173A381C7D595800D2F0D7 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		5E173A391C7D595800D2F0D7 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		5E173A3B1C7D832400D2F0D7 /* fffff.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fffff.mp3; sourceTree = "<group>"; };
+		5E173A411C7D928400D2F0D7 /* AmplifyCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmplifyCache.h; sourceTree = "<group>"; };
+		5E173A421C7D928400D2F0D7 /* AmplifyCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmplifyCache.m; sourceTree = "<group>"; };
 		5E5321FE1C73273F008C0AC9 /* BaseTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableCell.h; sourceTree = "<group>"; };
 		5E5321FF1C73273F008C0AC9 /* BaseTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableCell.m; sourceTree = "<group>"; };
 		5E5322001C73273F008C0AC9 /* BaseTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseTableCell.xib; sourceTree = "<group>"; };
@@ -224,6 +252,33 @@
 			children = (
 				5E173A171C76C14900D2F0D7 /* CacheManager.h */,
 				5E173A181C76C14900D2F0D7 /* CacheManager.m */,
+				5E173A411C7D928400D2F0D7 /* AmplifyCache.h */,
+				5E173A421C7D928400D2F0D7 /* AmplifyCache.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		5E173A211C7AFBEF00D2F0D7 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				5E173A221C7AFC1400D2F0D7 /* TestWebViewController.h */,
+				5E173A231C7AFC1400D2F0D7 /* TestWebViewController.m */,
+				5E173A241C7AFC1400D2F0D7 /* TestWebViewController.xib */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		5E173A2F1C7D585D00D2F0D7 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				5E173A3B1C7D832400D2F0D7 /* fffff.mp3 */,
+				5E173A381C7D595800D2F0D7 /* NSString+MD5.h */,
+				5E173A391C7D595800D2F0D7 /* NSString+MD5.m */,
+				5E173A301C7D589200D2F0D7 /* FTWCache.h */,
+				5E173A311C7D589200D2F0D7 /* FTWCache.m */,
+				5E173A331C7D58B500D2F0D7 /* FTWViewController.h */,
+				5E173A341C7D58B500D2F0D7 /* FTWViewController.m */,
+				5E173A351C7D58B500D2F0D7 /* FTWViewController.xib */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -249,6 +304,8 @@
 		5E5322031C740D3A008C0AC9 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				5E173A2F1C7D585D00D2F0D7 /* Cache */,
+				5E173A211C7AFBEF00D2F0D7 /* WebView */,
 				5E5322141C745BDB008C0AC9 /* Basketball */,
 				5E5322041C740D71008C0AC9 /* Contact */,
 			);
@@ -300,11 +357,15 @@
 		5E557CF01C719EFF002C1674 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
+				5E173A1F1C7AFBB800D2F0D7 /* index.js */,
+				5E173A1D1C7AFBAF00D2F0D7 /* amplifyTest.html */,
 				5E557CF11C719F2D002C1674 /* BaseWebView.h */,
 				5E557CF21C719F2D002C1674 /* BaseWebView.m */,
 				5E557CF41C719F48002C1674 /* BaseWebViewController.h */,
 				5E557CF51C719F48002C1674 /* BaseWebViewController.m */,
 				5E557CF61C719F48002C1674 /* BaseWebViewController.xib */,
+				5E173A1A1C7AD76100D2F0D7 /* BaseWebManager.h */,
+				5E173A1B1C7AD76100D2F0D7 /* BaseWebManager.m */,
 			);
 			path = WebView;
 			sourceTree = "<group>";
@@ -677,10 +738,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E5322021C73273F008C0AC9 /* BaseTableCell.xib in Resources */,
+				5E173A261C7AFC1400D2F0D7 /* TestWebViewController.xib in Resources */,
 				5E5A7EAC1C62F2510052935B /* HomTabBarController.xib in Resources */,
 				5E547B181C60471800155618 /* BaseMultipleSectionTableViewController.xib in Resources */,
 				5E6424E81C5763ED009990E6 /* BaseNavigationController.xib in Resources */,
 				5E673ADE1C701C8F00CA93BB /* BootViewController.xib in Resources */,
+				5E173A1E1C7AFBAF00D2F0D7 /* amplifyTest.html in Resources */,
 				5E5A7E9B1C62F1880052935B /* HomeInfoController.xib in Resources */,
 				5E557CF81C719F48002C1674 /* BaseWebViewController.xib in Resources */,
 				5E6424F31C576E96009990E6 /* BaseTabBarController.xib in Resources */,
@@ -692,7 +755,10 @@
 				5E5A7EAA1C62F2510052935B /* HomeViewController.xib in Resources */,
 				5E53220F1C740E3C008C0AC9 /* KCMainViewController.xib in Resources */,
 				5E5A7E9D1C62F1880052935B /* PersonalInfoViewController.xib in Resources */,
+				5E173A371C7D58B500D2F0D7 /* FTWViewController.xib in Resources */,
 				5E557CFD1C71C3F1002C1674 /* BaseSearchViewController.xib in Resources */,
+				5E173A201C7AFBB800D2F0D7 /* index.js in Resources */,
+				5E173A3C1C7D832400D2F0D7 /* fffff.mp3 in Resources */,
 				5E5A7EAE1C62F2510052935B /* PersonalViewController.xib in Resources */,
 				5E0538641C589A8C00CF8317 /* BaseTableController.xib in Resources */,
 			);
@@ -768,20 +834,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E6424E71C5763ED009990E6 /* BaseNavigationController.m in Sources */,
+				5E173A361C7D58B500D2F0D7 /* FTWViewController.m in Sources */,
 				5E5A7E8A1C62E5230052935B /* BaseModel.m in Sources */,
 				5E5A7E9E1C62F1880052935B /* TestViewController.m in Sources */,
 				5E5322011C73273F008C0AC9 /* BaseTableCell.m in Sources */,
 				5E588C3B1C55FC4000AD1C16 /* AppDelegate.m in Sources */,
+				5E173A3A1C7D595800D2F0D7 /* NSString+MD5.m in Sources */,
 				5E673AE21C7028CA00CA93BB /* UserManager.m in Sources */,
 				5E5A7EAB1C62F2510052935B /* HomTabBarController.m in Sources */,
 				5E6424E21C57636A009990E6 /* BaseViewController.m in Sources */,
 				5E557CEF1C718027002C1674 /* MoreViewController.m in Sources */,
 				5E173A191C76C14900D2F0D7 /* CacheManager.m in Sources */,
+				5E173A321C7D589200D2F0D7 /* FTWCache.m in Sources */,
 				5E5A7E9A1C62F1880052935B /* HomeInfoController.m in Sources */,
+				5E173A251C7AFC1400D2F0D7 /* TestWebViewController.m in Sources */,
 				5E5A7E8D1C62E5680052935B /* BaseData.m in Sources */,
 				5E5A7EB61C633DE00052935B /* DBManager.m in Sources */,
+				5E173A1C1C7AD76100D2F0D7 /* BaseWebManager.m in Sources */,
 				5E5A7EB21C62F2DC0052935B /* HomeModel.m in Sources */,
 				5E0538631C589A8C00CF8317 /* BaseTableController.m in Sources */,
+				5E173A431C7D928400D2F0D7 /* AmplifyCache.m in Sources */,
 				5E53220E1C740E3C008C0AC9 /* KCMainViewController.m in Sources */,
 				5E5322181C745BF2008C0AC9 /* BasketBallViewController.m in Sources */,
 				5E5322071C740DB0008C0AC9 /* KCContact.m in Sources */,

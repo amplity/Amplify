@@ -65,4 +65,121 @@ static NSString * const BaseUrl = @"http://test1.harmay.com/router/";
     
     return sessionDataTask;
 }
+
+
++ (void)putRequest:(NSString *)url params:(NSDictionary *)params success:(requestSuccessBlock)successHandler failure:(requestFailureBlock)failureHandler {
+    
+    if (![self checkNetworkStatus]) {
+        successHandler(nil);
+        failureHandler(nil);
+        return;
+    }
+    
+    
+    BaseServicesManager * baseServicesManager = [BaseServicesManager instanceServicesManager];
+    
+    [baseServicesManager PUT:url parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        successHandler(responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        failureHandler(error);
+    }];
+}
+
++ (void)deleteRequest:(NSString *)url params:(NSDictionary *)params success:(requestSuccessBlock)successHandler failure:(requestFailureBlock)failureHandler {
+    
+    if (![self checkNetworkStatus]) {
+        successHandler(nil);
+        failureHandler(nil);
+        return;
+    }
+    
+    BaseServicesManager * baseServicesManager = [BaseServicesManager instanceServicesManager];
+    
+    [baseServicesManager DELETE:url parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        successHandler(responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        failureHandler(error);
+    }];
+}
+
+/**
+ 下载文件，监听下载进度
+ */
++ (void)downloadRequest:(NSString *)url successAndProgress:(progressBlock)progressHandler complete:(responseBlock)completionHandler {
+    
+    if (![self checkNetworkStatus]) {
+        progressHandler(0, 0, 0);
+        completionHandler(nil, nil);
+        return;
+    }
+    BaseServicesManager * baseServicesManager = [BaseServicesManager instanceServicesManager];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+    
+    
+    [baseServicesManager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
+        DLog(@"");
+        
+    } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+        DLog(@"");
+        return targetPath;
+        
+    } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+        completionHandler(response,error);
+    }];
+}
+
+
+
+/**
+ 上传文件，监听上传进度
+ */
++ (void)updateRequest:(NSString *)url params:(NSDictionary *)params successAndProgress:(progressBlock)progressHandler complete:(responseBlock)completionHandler {
+    
+    if (![self checkNetworkStatus]) {
+        progressHandler(0, 0, 0);
+        completionHandler(nil, nil);
+        return;
+    }
+    
+    
+    BaseServicesManager * baseServicesManager = [BaseServicesManager instanceServicesManager];
+    NSURLRequest * urlRequest = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:url]];
+    
+    [baseServicesManager uploadTaskWithRequest:urlRequest fromData:nil progress:^(NSProgress * _Nonnull uploadProgress) {
+        DLog(@"");
+    } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+        DLog(@"");
+    }];
+    
+    
+}
+
+
+/**
+ 监控网络状态
+ */
++ (BOOL)checkNetworkStatus {
+    
+    __block BOOL isNetworkUse = YES;
+    
+    AFNetworkReachabilityManager *reachabilityManager = [AFNetworkReachabilityManager sharedManager];
+    [reachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        if (status == AFNetworkReachabilityStatusUnknown) {
+            isNetworkUse = YES;
+        } else if (status == AFNetworkReachabilityStatusReachableViaWiFi){
+            isNetworkUse = YES;
+        } else if (status == AFNetworkReachabilityStatusReachableViaWWAN){
+            isNetworkUse = YES;
+        } else if (status == AFNetworkReachabilityStatusNotReachable){
+            // 网络异常操作
+            isNetworkUse = NO;
+            DLog(@"网络异常,请检查网络是否可用！");
+        }
+    }];
+    [reachabilityManager startMonitoring];
+    return isNetworkUse;
+}
 @end
+
+
+

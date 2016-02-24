@@ -197,4 +197,63 @@
  NSLog(@"---这个请求没有缓存");
  }
  */
+
+
+//--------------------------End----------------------------
+
+//***归档、解档的用法
+/**
+ *  1.NSKeyedArchiver 归档
+ *  2.归档必须遵循NSCoding
+ *  3.encodeWithCoder
+ *  4.initcodeWithCoder
+ *  5.encodeWithCoder、initcodeWithCoder实现键值存储、读取。废除了以前的顺序存放
+ */
+
++(void)saveKeyArchiver:(NSObject*)object{
+    //NSDocumentDirectory 缓存document文件夹
+    //NSLibraryDirectory 缓存lib文件夹
+    NSString * documentDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    
+    
+    NSString * fileSuffix = [NSString stringWithFormat:@"%@.%@",NSStringFromClass(object.class),@"archiver"];
+    NSString * fileDirectory = [documentDirectory stringByAppendingPathComponent:fileSuffix];
+    
+    [NSKeyedArchiver archiveRootObject:object toFile:fileDirectory];
+    
+}
+
++(NSObject*)getKeyArchiver:(NSString*)archiverFile{
+    NSString * documentDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString * fileDirectory = [documentDirectory stringByAppendingPathComponent:archiverFile];
+    
+    return [NSKeyedUnarchiver unarchiveObjectWithFile:fileDirectory];
+}
+
+
+//----------------------------End-------------------------
+
+-(void)savaObjectToFile:(NSString*)fileName withObject:(NSObject *) object{
+    //NSArray,NSDictionary,NSString 可以直接用writeToFile写入文件
+    
+    NSString * documentDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString * fileDirectory = [documentDirectory stringByAppendingPathComponent:fileName];
+    
+    
+    
+    NSData * archiverData = [NSKeyedArchiver archivedDataWithRootObject:object];
+    [[NSFileManager defaultManager] createFileAtPath:fileDirectory contents:archiverData attributes:nil];
+}
+
+-(NSData*)getObjectFormFile:(NSString*)fileName{
+    NSString * documentDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString * fileDirectory = [documentDirectory stringByAppendingPathComponent:fileName];
+    
+    //读取文件
+    NSData * fileData = [[NSData alloc] initWithContentsOfFile:fileDirectory];
+//    [[NSFileManager defaultManager] contentsAtPath:fileDirectory];
+    
+    
+    return fileData;
+}
 @end
