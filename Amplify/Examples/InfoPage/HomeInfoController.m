@@ -7,6 +7,15 @@
 //
 
 #import "HomeInfoController.h"
+#import "TestViewController.h"
+#import "SwipePageViewController.h"
+#import "BaseSearchViewController.h"
+#import "KCMainViewController.h"
+#import "DrogImageView.h"
+#import "BasketBallViewController.h"
+#import "TestWebViewController.h"
+#import "FTWViewController.h"
+#import "WebCacheViewController.h"
 
 @interface HomeInfoController ()
 
@@ -52,6 +61,12 @@
 //    
 //    self.navigationItem.titleView = homeTitleView;
 //    self.navigationItem.leftBarButtonItem.tintColor = [UIColor greenColor];
+    
+    
+    DrogImageView * drogImageView = [[DrogImageView alloc] initWithFrame:CGRectMake(100, 200, 60, 60)];
+    drogImageView.backgroundColor = [UIColor greenColor];
+    
+    [self.view addSubview:drogImageView];
 }
 
 
@@ -77,8 +92,47 @@
 }
 
 -(void)infoNextClick{
-    [self.navigationController popToRootViewControllerAnimated:YES];
+//    [self.navigationController popToRootViewControllerAnimated:YES];
+    
+//    TestViewController * testViewController = [[TestViewController alloc] init];
+//    [self.navigationController pushViewController:testViewController animated:YES];
+    
+//    SwipePageViewController * swipePageViewController = [[SwipePageViewController alloc] initWithNibName:@"SwipePageViewController" bundle:nil];
+    
+//    SwipePageViewController * swipePageViewController = [[SwipePageViewController alloc] init];
+//    [self.navigationController pushViewController:swipePageViewController animated:YES];
+    
+//    BaseSearchViewController * baseSearchViewController = [[BaseSearchViewController alloc] init];
+//    [self.navigationController pushViewController:baseSearchViewController animated:YES];
+//    
+//    
+//    UIBarButtonItem * leftBtnItem = [[UIBarButtonItem alloc] initWithTitle:@"fanhui" style:UIBarButtonItemStyleDone target:self action:@selector(testLeftBtnClick)];
+//    baseSearchViewController.navigationItem.leftBarButtonItem = leftBtnItem;
+    
+//    KCMainViewController * kcMainViewController = [[KCMainViewController alloc] init];
+//    [self.navigationController pushViewController:kcMainViewController animated:YES];
+    
+//    BasketBallViewController * basketBallViewController = [[BasketBallViewController alloc] init];
+//    [self.navigationController pushViewController:basketBallViewController animated:YES];
+    
+    
+//    TestWebViewController * testWebController = [[TestWebViewController alloc] init];
+//    [self.navigationController pushViewController:testWebController animated:YES];
+    
+    
+//    FTWViewController * ftwViewController = [[FTWViewController alloc] init];
+//    [self.navigationController pushViewController:ftwViewController animated:YES];
+    
+    WebCacheViewController * webCacheViewController = [[WebCacheViewController alloc] init];
+    [self.navigationController pushViewController:webCacheViewController animated:YES];
+    
 }
+
+
+-(void)testLeftBtnClick{
+    DLog(@"拦截了左侧的事件");
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

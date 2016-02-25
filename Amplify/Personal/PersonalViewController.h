@@ -2,13 +2,12 @@
 //  PersonalViewController.h
 //  Amplify
 //
-//  Created by ZhangJixu on 16/1/26.
+//  Created by ZhangJixu on 16/2/25.
 //  Copyright © 2016年 hm. All rights reserved.
 //
 
 #import "BaseViewController.h"
 
 @interface PersonalViewController : BaseViewController
-- (IBAction)nextClick:(id)sender;
 
 @end
