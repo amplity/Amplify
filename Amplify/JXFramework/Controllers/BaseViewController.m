@@ -38,7 +38,7 @@
 //状态栏的颜色
 - (UIStatusBarStyle)preferredStatusBarStyle{
     //subClass
-    return UIStatusBarStyleDefault;
+    return UIStatusBarStyleLightContent;
 }
 
 

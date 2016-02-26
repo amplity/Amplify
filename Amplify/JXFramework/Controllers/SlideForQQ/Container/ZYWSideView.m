@@ -8,6 +8,7 @@
 
 #import "ZYWSideView.h"
 #import "ZYWSideTableView.h"
+#import "HomeInfoController.h"
 
 
 @interface ZYWSideView()<UIActionSheetDelegate>
@@ -155,6 +156,15 @@
     //发送通知
     [[NSNotificationCenter defaultCenter] postNotificationName:self.name object:nil];
     
+    HomeInfoController * homeInfoController = [[HomeInfoController alloc] init];
+    
+    if(self.currentViewController != nil){
+        [self.currentViewController presentViewController:homeInfoController animated:YES completion:nil];
+    }
+    
 }
 
+
+
 @end
+

@@ -91,6 +91,9 @@
 		5E64AE851C8026300062F1BC /* ZYWSideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E64AE831C8026300062F1BC /* ZYWSideView.m */; };
 		5E64AE881C8027300062F1BC /* UIView+SHCZExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E64AE871C8027300062F1BC /* UIView+SHCZExt.m */; };
 		5E64AE8B1C8027D80062F1BC /* ZYWContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E64AE8A1C8027D80062F1BC /* ZYWContainerViewController.m */; };
+		5E64AE971C805A720062F1BC /* IISideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E64AE911C805A720062F1BC /* IISideController.m */; };
+		5E64AE981C805A720062F1BC /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E64AE931C805A720062F1BC /* IIViewDeckController.m */; };
+		5E64AE991C805A720062F1BC /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E64AE951C805A720062F1BC /* IIWrapController.m */; };
 		5E673ADD1C701C8F00CA93BB /* BootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E673ADB1C701C8F00CA93BB /* BootViewController.m */; };
 		5E673ADE1C701C8F00CA93BB /* BootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E673ADC1C701C8F00CA93BB /* BootViewController.xib */; };
 		5E673AE21C7028CA00CA93BB /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E673AE11C7028CA00CA93BB /* UserManager.m */; };
@@ -266,6 +269,13 @@
 		5E64AE871C8027300062F1BC /* UIView+SHCZExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SHCZExt.m"; sourceTree = "<group>"; };
 		5E64AE891C8027D80062F1BC /* ZYWContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYWContainerViewController.h; sourceTree = "<group>"; };
 		5E64AE8A1C8027D80062F1BC /* ZYWContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYWContainerViewController.m; sourceTree = "<group>"; };
+		5E64AE901C805A720062F1BC /* IISideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IISideController.h; sourceTree = "<group>"; };
+		5E64AE911C805A720062F1BC /* IISideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IISideController.m; sourceTree = "<group>"; };
+		5E64AE921C805A720062F1BC /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
+		5E64AE931C805A720062F1BC /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
+		5E64AE941C805A720062F1BC /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
+		5E64AE951C805A720062F1BC /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
+		5E64AE961C805A720062F1BC /* ViewDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewDeck.h; sourceTree = "<group>"; };
 		5E673ADA1C701C8F00CA93BB /* BootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootViewController.h; sourceTree = "<group>"; };
 		5E673ADB1C701C8F00CA93BB /* BootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootViewController.m; sourceTree = "<group>"; };
 		5E673ADC1C701C8F00CA93BB /* BootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BootViewController.xib; sourceTree = "<group>"; };
@@ -440,6 +450,7 @@
 		5E173A901C7EE9D600D2F0D7 /* Slide */ = {
 			isa = PBXGroup;
 			children = (
+				5E64AE8F1C805A720062F1BC /* ViewDeck */,
 				5E173A941C7EEA3B00D2F0D7 /* Animations */,
 				5E173A911C7EEA0500D2F0D7 /* SlideNavigationController.h */,
 				5E173A921C7EEA0500D2F0D7 /* SlideNavigationController.m */,
@@ -751,6 +762,20 @@
 			path = Container;
 			sourceTree = "<group>";
 		};
+		5E64AE8F1C805A720062F1BC /* ViewDeck */ = {
+			isa = PBXGroup;
+			children = (
+				5E64AE901C805A720062F1BC /* IISideController.h */,
+				5E64AE911C805A720062F1BC /* IISideController.m */,
+				5E64AE921C805A720062F1BC /* IIViewDeckController.h */,
+				5E64AE931C805A720062F1BC /* IIViewDeckController.m */,
+				5E64AE941C805A720062F1BC /* IIWrapController.h */,
+				5E64AE951C805A720062F1BC /* IIWrapController.m */,
+				5E64AE961C805A720062F1BC /* ViewDeck.h */,
+			);
+			path = ViewDeck;
+			sourceTree = "<group>";
+		};
 		5E673AD91C701C3F00CA93BB /* Boot */ = {
 			isa = PBXGroup;
 			children = (
@@ -1027,6 +1052,7 @@
 				5E173A3A1C7D595800D2F0D7 /* NSString+MD5.m in Sources */,
 				5E673AE21C7028CA00CA93BB /* UserManager.m in Sources */,
 				5E173A7A1C7EE5A500D2F0D7 /* HomeViewController.m in Sources */,
+				5E64AE981C805A720062F1BC /* IIViewDeckController.m in Sources */,
 				5E173A5C1C7ED46900D2F0D7 /* WebCacheViewController.m in Sources */,
 				5E173A8C1C7EE5E600D2F0D7 /* PersonalInfoViewController.m in Sources */,
 				5E5A7EAB1C62F2510052935B /* HomTabBarController.m in Sources */,
@@ -1038,6 +1064,7 @@
 				5E173AA31C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
 				5E173A251C7AFC1400D2F0D7 /* TestWebViewController.m in Sources */,
 				5E173A6F1C7EE25900D2F0D7 /* WishViewController.m in Sources */,
+				5E64AE991C805A720062F1BC /* IIWrapController.m in Sources */,
 				5E5A7E8D1C62E5680052935B /* BaseData.m in Sources */,
 				5E173A7F1C7EE5B700D2F0D7 /* HomeModel.m in Sources */,
 				5E5A7EB61C633DE00052935B /* DBManager.m in Sources */,
@@ -1056,6 +1083,7 @@
 				5E6424F21C576E96009990E6 /* BaseTabBarController.m in Sources */,
 				5E5A7EB91C633FAB0052935B /* BaseDbData.m in Sources */,
 				5E557CFC1C71C3F1002C1674 /* BaseSearchViewController.m in Sources */,
+				5E64AE971C805A720062F1BC /* IISideController.m in Sources */,
 				5E173AA21C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
 				5E173A8E1C7EE5E600D2F0D7 /* TestViewController.m in Sources */,
 				5E547B171C60471800155618 /* BaseMultipleSectionTableViewController.m in Sources */,

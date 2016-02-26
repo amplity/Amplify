@@ -35,6 +35,7 @@
 
     //在self.view上创建一个透明的View
     ZYWSideView *mainView=[[ZYWSideView alloc]initWithFrame:CGRectMake(-self.view.frame.size.width*0.25,0,self.view.bounds.size.width,self.view.bounds.size.height)];
+    mainView.currentViewController = self;
     
     //设置冰川背景图
     UIImageView *img=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"sidebar_bg"]];

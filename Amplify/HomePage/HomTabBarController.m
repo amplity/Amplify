@@ -34,7 +34,6 @@
 
 
     BaseNavigationController * lookForNavigationController = [[BaseNavigationController alloc] initWithRootViewController:lookForViewController];
-    lookForNavigationController.navigationBar.barTintColor = HexRGBAlpha(0x000000, .6);
 
     
     
@@ -60,6 +59,7 @@
     BaseNavigationController * personalNavigationController = [[BaseNavigationController alloc] initWithRootViewController:personalViewController];
     
     self.viewControllers = [[NSArray alloc] initWithObjects:lookForNavigationController,discoverNavigationController,wishNavigationController, personalNavigationController,nil];
+    
     
 }
 

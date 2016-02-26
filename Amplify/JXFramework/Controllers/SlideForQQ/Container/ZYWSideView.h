@@ -10,4 +10,7 @@
 
 @interface ZYWSideView : UIView
 
+
+@property (nonatomic, strong) UIViewController *currentViewController;
+
 @end

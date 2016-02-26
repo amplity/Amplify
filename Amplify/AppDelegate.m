@@ -12,6 +12,8 @@
 #import "BootViewController.h"
 #import "ZYWContainerViewController.h"
 #import "HomeInfoController.h"
+#import "SlideNavigationController.h"
+#import "LookForViewController.h"
 
 @interface AppDelegate ()
 
@@ -34,8 +36,9 @@
     UIViewController * startViewController = nil;
     
     if (/* DISABLES CODE */ (1)) {
-//        startViewController = [[HomTabBarController alloc] init];
+
         startViewController = [[ZYWContainerViewController alloc] init];
+        
         
     }else{
         startViewController = [[BootViewController alloc] init];
