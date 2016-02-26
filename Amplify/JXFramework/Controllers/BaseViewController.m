@@ -35,6 +35,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+//状态栏的颜色
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    //subClass
+    return UIStatusBarStyleDefault;
+}
+
 
 #pragma mark - UINavigationControllerDelegate
 -(void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{

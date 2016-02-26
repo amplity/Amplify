@@ -43,6 +43,12 @@
 		5E173A8D1C7EE5E600D2F0D7 /* PersonalInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E173A861C7EE5E600D2F0D7 /* PersonalInfoViewController.xib */; };
 		5E173A8E1C7EE5E600D2F0D7 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E173A881C7EE5E600D2F0D7 /* TestViewController.m */; };
 		5E173A8F1C7EE5E600D2F0D7 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E173A891C7EE5E600D2F0D7 /* TestViewController.xib */; };
+		5E173A931C7EEA0500D2F0D7 /* SlideNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E173A921C7EEA0500D2F0D7 /* SlideNavigationController.m */; };
+		5E173AA01C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E173A971C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorFade.m */; };
+		5E173AA11C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E173A991C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorScale.m */; };
+		5E173AA21C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E173A9B1C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorScaleAndFade.m */; };
+		5E173AA31C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E173A9D1C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorSlide.m */; };
+		5E173AA41C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E173A9F1C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorSlideAndFade.m */; };
 		5E5322011C73273F008C0AC9 /* BaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5321FF1C73273F008C0AC9 /* BaseTableCell.m */; };
 		5E5322021C73273F008C0AC9 /* BaseTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5322001C73273F008C0AC9 /* BaseTableCell.xib */; };
 		5E5322071C740DB0008C0AC9 /* KCContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5322061C740DB0008C0AC9 /* KCContact.m */; };
@@ -81,6 +87,10 @@
 		5E6424E81C5763ED009990E6 /* BaseNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E6424E61C5763ED009990E6 /* BaseNavigationController.xib */; };
 		5E6424F21C576E96009990E6 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6424F01C576E96009990E6 /* BaseTabBarController.m */; };
 		5E6424F31C576E96009990E6 /* BaseTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E6424F11C576E96009990E6 /* BaseTabBarController.xib */; };
+		5E64AE841C8026300062F1BC /* ZYWSideTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E64AE811C8026300062F1BC /* ZYWSideTableView.m */; };
+		5E64AE851C8026300062F1BC /* ZYWSideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E64AE831C8026300062F1BC /* ZYWSideView.m */; };
+		5E64AE881C8027300062F1BC /* UIView+SHCZExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E64AE871C8027300062F1BC /* UIView+SHCZExt.m */; };
+		5E64AE8B1C8027D80062F1BC /* ZYWContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E64AE8A1C8027D80062F1BC /* ZYWContainerViewController.m */; };
 		5E673ADD1C701C8F00CA93BB /* BootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E673ADB1C701C8F00CA93BB /* BootViewController.m */; };
 		5E673ADE1C701C8F00CA93BB /* BootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E673ADC1C701C8F00CA93BB /* BootViewController.xib */; };
 		5E673AE21C7028CA00CA93BB /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E673AE11C7028CA00CA93BB /* UserManager.m */; };
@@ -165,6 +175,19 @@
 		5E173A871C7EE5E600D2F0D7 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		5E173A881C7EE5E600D2F0D7 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		5E173A891C7EE5E600D2F0D7 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		5E173A911C7EEA0500D2F0D7 /* SlideNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationController.h; sourceTree = "<group>"; };
+		5E173A921C7EEA0500D2F0D7 /* SlideNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationController.m; sourceTree = "<group>"; };
+		5E173A951C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimator.h; sourceTree = "<group>"; };
+		5E173A961C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimatorFade.h; sourceTree = "<group>"; };
+		5E173A971C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationContorllerAnimatorFade.m; sourceTree = "<group>"; };
+		5E173A981C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimatorScale.h; sourceTree = "<group>"; };
+		5E173A991C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationContorllerAnimatorScale.m; sourceTree = "<group>"; };
+		5E173A9A1C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorScaleAndFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimatorScaleAndFade.h; sourceTree = "<group>"; };
+		5E173A9B1C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorScaleAndFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationContorllerAnimatorScaleAndFade.m; sourceTree = "<group>"; };
+		5E173A9C1C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorSlide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimatorSlide.h; sourceTree = "<group>"; };
+		5E173A9D1C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorSlide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationContorllerAnimatorSlide.m; sourceTree = "<group>"; };
+		5E173A9E1C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorSlideAndFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimatorSlideAndFade.h; sourceTree = "<group>"; };
+		5E173A9F1C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorSlideAndFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationContorllerAnimatorSlideAndFade.m; sourceTree = "<group>"; };
 		5E5321FE1C73273F008C0AC9 /* BaseTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableCell.h; sourceTree = "<group>"; };
 		5E5321FF1C73273F008C0AC9 /* BaseTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableCell.m; sourceTree = "<group>"; };
 		5E5322001C73273F008C0AC9 /* BaseTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseTableCell.xib; sourceTree = "<group>"; };
@@ -235,6 +258,14 @@
 		5E6424EF1C576E96009990E6 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
 		5E6424F01C576E96009990E6 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 		5E6424F11C576E96009990E6 /* BaseTabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseTabBarController.xib; sourceTree = "<group>"; };
+		5E64AE801C8026300062F1BC /* ZYWSideTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYWSideTableView.h; sourceTree = "<group>"; };
+		5E64AE811C8026300062F1BC /* ZYWSideTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYWSideTableView.m; sourceTree = "<group>"; };
+		5E64AE821C8026300062F1BC /* ZYWSideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYWSideView.h; sourceTree = "<group>"; };
+		5E64AE831C8026300062F1BC /* ZYWSideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYWSideView.m; sourceTree = "<group>"; };
+		5E64AE861C8027300062F1BC /* UIView+SHCZExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SHCZExt.h"; sourceTree = "<group>"; };
+		5E64AE871C8027300062F1BC /* UIView+SHCZExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SHCZExt.m"; sourceTree = "<group>"; };
+		5E64AE891C8027D80062F1BC /* ZYWContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYWContainerViewController.h; sourceTree = "<group>"; };
+		5E64AE8A1C8027D80062F1BC /* ZYWContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYWContainerViewController.m; sourceTree = "<group>"; };
 		5E673ADA1C701C8F00CA93BB /* BootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootViewController.h; sourceTree = "<group>"; };
 		5E673ADB1C701C8F00CA93BB /* BootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootViewController.m; sourceTree = "<group>"; };
 		5E673ADC1C701C8F00CA93BB /* BootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BootViewController.xib; sourceTree = "<group>"; };
@@ -404,6 +435,34 @@
 				5E173A891C7EE5E600D2F0D7 /* TestViewController.xib */,
 			);
 			path = InfoPage;
+			sourceTree = "<group>";
+		};
+		5E173A901C7EE9D600D2F0D7 /* Slide */ = {
+			isa = PBXGroup;
+			children = (
+				5E173A941C7EEA3B00D2F0D7 /* Animations */,
+				5E173A911C7EEA0500D2F0D7 /* SlideNavigationController.h */,
+				5E173A921C7EEA0500D2F0D7 /* SlideNavigationController.m */,
+			);
+			path = Slide;
+			sourceTree = "<group>";
+		};
+		5E173A941C7EEA3B00D2F0D7 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				5E173A951C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimator.h */,
+				5E173A961C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorFade.h */,
+				5E173A971C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorFade.m */,
+				5E173A981C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorScale.h */,
+				5E173A991C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorScale.m */,
+				5E173A9A1C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorScaleAndFade.h */,
+				5E173A9B1C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorScaleAndFade.m */,
+				5E173A9C1C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorSlide.h */,
+				5E173A9D1C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorSlide.m */,
+				5E173A9E1C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorSlideAndFade.h */,
+				5E173A9F1C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorSlideAndFade.m */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 		5E5321F71C7326D4008C0AC9 /* Table */ = {
@@ -638,6 +697,8 @@
 		5E6424DE1C57633A009990E6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5E64AE7E1C80259A0062F1BC /* SlideForQQ */,
+				5E173A901C7EE9D600D2F0D7 /* Slide */,
 				5E5322101C745528008C0AC9 /* Drog */,
 				5E5322031C740D3A008C0AC9 /* Example */,
 				5E5321F71C7326D4008C0AC9 /* Table */,
@@ -665,6 +726,29 @@
 				5E557CFB1C71C3F1002C1674 /* BaseSearchViewController.xib */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5E64AE7E1C80259A0062F1BC /* SlideForQQ */ = {
+			isa = PBXGroup;
+			children = (
+				5E64AE861C8027300062F1BC /* UIView+SHCZExt.h */,
+				5E64AE871C8027300062F1BC /* UIView+SHCZExt.m */,
+				5E64AE7F1C8026300062F1BC /* Container */,
+			);
+			path = SlideForQQ;
+			sourceTree = "<group>";
+		};
+		5E64AE7F1C8026300062F1BC /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				5E64AE891C8027D80062F1BC /* ZYWContainerViewController.h */,
+				5E64AE8A1C8027D80062F1BC /* ZYWContainerViewController.m */,
+				5E64AE801C8026300062F1BC /* ZYWSideTableView.h */,
+				5E64AE811C8026300062F1BC /* ZYWSideTableView.m */,
+				5E64AE821C8026300062F1BC /* ZYWSideView.h */,
+				5E64AE831C8026300062F1BC /* ZYWSideView.m */,
+			);
+			path = Container;
 			sourceTree = "<group>";
 		};
 		5E673AD91C701C3F00CA93BB /* Boot */ = {
@@ -932,11 +1016,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E173A931C7EEA0500D2F0D7 /* SlideNavigationController.m in Sources */,
 				5E6424E71C5763ED009990E6 /* BaseNavigationController.m in Sources */,
 				5E173A361C7D58B500D2F0D7 /* FTWViewController.m in Sources */,
 				5E5A7E8A1C62E5230052935B /* BaseModel.m in Sources */,
 				5E5322011C73273F008C0AC9 /* BaseTableCell.m in Sources */,
 				5E588C3B1C55FC4000AD1C16 /* AppDelegate.m in Sources */,
+				5E173AA41C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */,
+				5E64AE841C8026300062F1BC /* ZYWSideTableView.m in Sources */,
 				5E173A3A1C7D595800D2F0D7 /* NSString+MD5.m in Sources */,
 				5E673AE21C7028CA00CA93BB /* UserManager.m in Sources */,
 				5E173A7A1C7EE5A500D2F0D7 /* HomeViewController.m in Sources */,
@@ -948,6 +1035,7 @@
 				5E173A191C76C14900D2F0D7 /* CacheManager.m in Sources */,
 				5E173A521C7ED0CE00D2F0D7 /* CustomURLCache.m in Sources */,
 				5E173A321C7D589200D2F0D7 /* FTWCache.m in Sources */,
+				5E173AA31C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
 				5E173A251C7AFC1400D2F0D7 /* TestWebViewController.m in Sources */,
 				5E173A6F1C7EE25900D2F0D7 /* WishViewController.m in Sources */,
 				5E5A7E8D1C62E5680052935B /* BaseData.m in Sources */,
@@ -958,6 +1046,7 @@
 				5E173A431C7D928400D2F0D7 /* AmplifyCache.m in Sources */,
 				5E53220E1C740E3C008C0AC9 /* KCMainViewController.m in Sources */,
 				5E5322181C745BF2008C0AC9 /* BasketBallViewController.m in Sources */,
+				5E173AA11C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorScale.m in Sources */,
 				5E5322071C740DB0008C0AC9 /* KCContact.m in Sources */,
 				5E559BE91C61DF00009F3078 /* BaseServicesManager.m in Sources */,
 				5E673AE61C705F8C00CA93BB /* ScrollAutoImageView.m in Sources */,
@@ -967,13 +1056,18 @@
 				5E6424F21C576E96009990E6 /* BaseTabBarController.m in Sources */,
 				5E5A7EB91C633FAB0052935B /* BaseDbData.m in Sources */,
 				5E557CFC1C71C3F1002C1674 /* BaseSearchViewController.m in Sources */,
+				5E173AA21C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
 				5E173A8E1C7EE5E600D2F0D7 /* TestViewController.m in Sources */,
 				5E547B171C60471800155618 /* BaseMultipleSectionTableViewController.m in Sources */,
+				5E64AE881C8027300062F1BC /* UIView+SHCZExt.m in Sources */,
 				5E557CEB1C71749E002C1674 /* SwipePageViewController.m in Sources */,
 				5E173A6A1C7EE24B00D2F0D7 /* DiscoverViewController.m in Sources */,
 				5E557CF71C719F48002C1674 /* BaseWebViewController.m in Sources */,
+				5E64AE851C8026300062F1BC /* ZYWSideView.m in Sources */,
 				5E673ADD1C701C8F00CA93BB /* BootViewController.m in Sources */,
+				5E173AA01C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorFade.m in Sources */,
 				5E588C381C55FC4000AD1C16 /* main.m in Sources */,
+				5E64AE8B1C8027D80062F1BC /* ZYWContainerViewController.m in Sources */,
 				5E173A581C7ED22C00D2F0D7 /* Reachability.m in Sources */,
 				5E557CF31C719F2D002C1674 /* BaseWebView.m in Sources */,
 				5E53221D1C76A72E008C0AC9 /* UtilsManager.m in Sources */,

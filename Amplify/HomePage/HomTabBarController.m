@@ -32,7 +32,10 @@
     lookForViewController.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -2);
     lookForViewController.tabBarItem.imageInsets = UIEdgeInsetsMake(8, 0, -8, 0);
 
+
     BaseNavigationController * lookForNavigationController = [[BaseNavigationController alloc] initWithRootViewController:lookForViewController];
+    lookForNavigationController.navigationBar.barTintColor = HexRGBAlpha(0x000000, .6);
+
     
     
     DiscoverViewController * discoverViewController = [[DiscoverViewController alloc] init];
@@ -63,6 +66,19 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+#pragma mark - SlideNavigationController Methods -
+
+- (BOOL)slideNavigationControllerShouldDisplayLeftMenu
+{
+    return YES;
+}
+
+- (BOOL)slideNavigationControllerShouldDisplayRightMenu
+{
+    return NO;
 }
 
 

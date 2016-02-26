@@ -10,6 +10,8 @@
 #import "HomeViewController.h"
 #import "HomTabBarController.h"
 #import "BootViewController.h"
+#import "ZYWContainerViewController.h"
+#import "HomeInfoController.h"
 
 @interface AppDelegate ()
 
@@ -32,10 +34,14 @@
     UIViewController * startViewController = nil;
     
     if (/* DISABLES CODE */ (1)) {
-        startViewController = [[HomTabBarController alloc] init];
+//        startViewController = [[HomTabBarController alloc] init];
+        startViewController = [[ZYWContainerViewController alloc] init];
+        
     }else{
         startViewController = [[BootViewController alloc] init];
     }
+    
+    
     
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
