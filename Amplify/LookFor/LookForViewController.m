@@ -7,7 +7,7 @@
 //
 
 #import "LookForViewController.h"
-#import <ViewDeck/ViewDeck.h>
+#import "ArticleCollectViewController.h"
 
 @interface LookForViewController ()
 
@@ -26,8 +26,12 @@
     
     self.navigationItem.rightBarButtonItem = rightBarButtonItem;
     self.navigationController.navigationBar.barTintColor = HexRGBAlpha(0x000000,.6);
-
+    
+    
 }
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -39,13 +43,38 @@
 //收藏
 -(void)likeStore:(id)sender{
     
-    UIViewController * viewController = [[UIViewController alloc] init];
-    viewController.view.backgroundColor = [UIColor blackColor];
-    [self.navigationController pushViewController:viewController animated:YES];
+    ArticleCollectViewController * articleCollectViewController = [[ArticleCollectViewController alloc] init];
+    articleCollectViewController.view.backgroundColor = [UIColor blackColor];
+    [self.navigationController pushViewController:articleCollectViewController animated:YES];
 }
 
--(UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleLightContent;
+
+#pragma mark - UITabBarDelegate
+
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
+    
+    self.oneView.hidden = YES;
+    self.twoView.hidden = YES;
+    self.threeView.hidden = YES;
+    self.fourView.hidden = YES;
+    
+    switch (item.tag) {
+        case 0:
+            self.oneView.hidden = NO;
+            break;
+        case 1:
+            self.twoView.hidden = NO;
+            break;
+        case 2:
+            self.threeView.hidden = NO;
+            break;
+        case 3:
+            self.fourView.hidden = NO;
+            break;
+            
+        default:
+            break;
+    }
 }
 
 

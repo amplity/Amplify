@@ -11,6 +11,11 @@
 		5E0538641C589A8C00CF8317 /* BaseTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E0538621C589A8C00CF8317 /* BaseTableController.xib */; };
 		5E0A8B241C83F1070007A9EA /* IIViewDeckLeftController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A8B221C83F1070007A9EA /* IIViewDeckLeftController.m */; };
 		5E0A8B251C83F1070007A9EA /* IIViewDeckLeftController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E0A8B231C83F1070007A9EA /* IIViewDeckLeftController.xib */; };
+		5E0A8B341C8440290007A9EA /* ArticleCollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A8B321C8440290007A9EA /* ArticleCollectViewController.m */; };
+		5E0A8B351C8440290007A9EA /* ArticleCollectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E0A8B331C8440290007A9EA /* ArticleCollectViewController.xib */; };
+		5E0A8B3B1C84409E0007A9EA /* ArticleCollectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A8B3A1C84409E0007A9EA /* ArticleCollectCell.m */; };
+		5E0A8B3E1C8440B60007A9EA /* ArticleCollectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A8B3D1C8440B60007A9EA /* ArticleCollectModel.m */; };
+		5E0A8B401C8440CF0007A9EA /* ArticleCollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E0A8B3F1C8440CF0007A9EA /* ArticleCollectCell.xib */; };
 		5E173A191C76C14900D2F0D7 /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E173A181C76C14900D2F0D7 /* CacheManager.m */; };
 		5E173A1C1C7AD76100D2F0D7 /* BaseWebManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E173A1B1C7AD76100D2F0D7 /* BaseWebManager.m */; };
 		5E173A1E1C7AFBAF00D2F0D7 /* amplifyTest.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E173A1D1C7AFBAF00D2F0D7 /* amplifyTest.html */; };
@@ -126,6 +131,14 @@
 		5E0A8B211C83F1070007A9EA /* IIViewDeckLeftController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckLeftController.h; sourceTree = "<group>"; };
 		5E0A8B221C83F1070007A9EA /* IIViewDeckLeftController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckLeftController.m; sourceTree = "<group>"; };
 		5E0A8B231C83F1070007A9EA /* IIViewDeckLeftController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IIViewDeckLeftController.xib; sourceTree = "<group>"; };
+		5E0A8B311C8440290007A9EA /* ArticleCollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleCollectViewController.h; sourceTree = "<group>"; };
+		5E0A8B321C8440290007A9EA /* ArticleCollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleCollectViewController.m; sourceTree = "<group>"; };
+		5E0A8B331C8440290007A9EA /* ArticleCollectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleCollectViewController.xib; sourceTree = "<group>"; };
+		5E0A8B391C84409E0007A9EA /* ArticleCollectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleCollectCell.h; sourceTree = "<group>"; };
+		5E0A8B3A1C84409E0007A9EA /* ArticleCollectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleCollectCell.m; sourceTree = "<group>"; };
+		5E0A8B3C1C8440B60007A9EA /* ArticleCollectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleCollectModel.h; sourceTree = "<group>"; };
+		5E0A8B3D1C8440B60007A9EA /* ArticleCollectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleCollectModel.m; sourceTree = "<group>"; };
+		5E0A8B3F1C8440CF0007A9EA /* ArticleCollectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleCollectCell.xib; sourceTree = "<group>"; };
 		5E173A171C76C14900D2F0D7 /* CacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheManager.h; sourceTree = "<group>"; };
 		5E173A181C76C14900D2F0D7 /* CacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheManager.m; sourceTree = "<group>"; };
 		5E173A1A1C7AD76100D2F0D7 /* BaseWebManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebManager.h; sourceTree = "<group>"; };
@@ -312,6 +325,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E0A8B261C843F3B0007A9EA /* ArticleCollect */ = {
+			isa = PBXGroup;
+			children = (
+				5E0A8B311C8440290007A9EA /* ArticleCollectViewController.h */,
+				5E0A8B321C8440290007A9EA /* ArticleCollectViewController.m */,
+				5E0A8B331C8440290007A9EA /* ArticleCollectViewController.xib */,
+				5E0A8B391C84409E0007A9EA /* ArticleCollectCell.h */,
+				5E0A8B3A1C84409E0007A9EA /* ArticleCollectCell.m */,
+				5E0A8B3F1C8440CF0007A9EA /* ArticleCollectCell.xib */,
+				5E0A8B3C1C8440B60007A9EA /* ArticleCollectModel.h */,
+				5E0A8B3D1C8440B60007A9EA /* ArticleCollectModel.m */,
+			);
+			path = ArticleCollect;
+			sourceTree = "<group>";
+		};
 		5E173A161C76C13100D2F0D7 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
@@ -378,6 +406,7 @@
 		5E173A5F1C7EE0E300D2F0D7 /* LookFor */ = {
 			isa = PBXGroup;
 			children = (
+				5E0A8B261C843F3B0007A9EA /* ArticleCollect */,
 				5E173A621C7EE23200D2F0D7 /* LookForViewController.h */,
 				5E173A631C7EE23200D2F0D7 /* LookForViewController.m */,
 				5E173A641C7EE23200D2F0D7 /* LookForViewController.xib */,
@@ -941,6 +970,7 @@
 				5E173A8B1C7EE5E600D2F0D7 /* HomeInfoController.xib in Resources */,
 				5E173A8F1C7EE5E600D2F0D7 /* TestViewController.xib in Resources */,
 				5E673ADE1C701C8F00CA93BB /* BootViewController.xib in Resources */,
+				5E0A8B401C8440CF0007A9EA /* ArticleCollectCell.xib in Resources */,
 				5E173A1E1C7AFBAF00D2F0D7 /* amplifyTest.html in Resources */,
 				5E173A5D1C7ED46900D2F0D7 /* WebCacheViewController.xib in Resources */,
 				5E173A701C7EE25900D2F0D7 /* WishViewController.xib in Resources */,
@@ -952,6 +982,7 @@
 				5E673AEC1C7074B500CA93BB /* SwipeViewController.xib in Resources */,
 				5E588C431C55FC4000AD1C16 /* Assets.xcassets in Resources */,
 				5E6424E31C57636A009990E6 /* BaseViewController.xib in Resources */,
+				5E0A8B351C8440290007A9EA /* ArticleCollectViewController.xib in Resources */,
 				5E173A7B1C7EE5A500D2F0D7 /* HomeViewController.xib in Resources */,
 				5E0A8B251C83F1070007A9EA /* IIViewDeckLeftController.xib in Resources */,
 				5E53220F1C740E3C008C0AC9 /* KCMainViewController.xib in Resources */,
@@ -1063,7 +1094,9 @@
 				5E0538631C589A8C00CF8317 /* BaseTableController.m in Sources */,
 				5E173A431C7D928400D2F0D7 /* AmplifyCache.m in Sources */,
 				5E53220E1C740E3C008C0AC9 /* KCMainViewController.m in Sources */,
+				5E0A8B341C8440290007A9EA /* ArticleCollectViewController.m in Sources */,
 				5E5322181C745BF2008C0AC9 /* BasketBallViewController.m in Sources */,
+				5E0A8B3B1C84409E0007A9EA /* ArticleCollectCell.m in Sources */,
 				5E173AA11C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorScale.m in Sources */,
 				5E5322071C740DB0008C0AC9 /* KCContact.m in Sources */,
 				5E559BE91C61DF00009F3078 /* BaseServicesManager.m in Sources */,
@@ -1074,6 +1107,7 @@
 				5E6424F21C576E96009990E6 /* BaseTabBarController.m in Sources */,
 				5E5A7EB91C633FAB0052935B /* BaseDbData.m in Sources */,
 				5E557CFC1C71C3F1002C1674 /* BaseSearchViewController.m in Sources */,
+				5E0A8B3E1C8440B60007A9EA /* ArticleCollectModel.m in Sources */,
 				5E173AA21C7EEA3B00D2F0D7 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
 				5E173A8E1C7EE5E600D2F0D7 /* TestViewController.m in Sources */,
 				5E547B171C60471800155618 /* BaseMultipleSectionTableViewController.m in Sources */,
