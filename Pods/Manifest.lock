@@ -24,6 +24,7 @@ PODS:
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
   - TTTAttributedLabel (1.13.4)
+  - ViewDeck (2.4.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
@@ -33,6 +34,7 @@ DEPENDENCIES:
   - MJRefresh
   - SDWebImage (~> 3.7)
   - TTTAttributedLabel
+  - ViewDeck (~> 2.4)
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
@@ -42,5 +44,6 @@ SPEC CHECKSUMS:
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
+  ViewDeck: e4c744cb5383cbae40cf286c6e7246df33962020
 
 COCOAPODS: 0.39.0

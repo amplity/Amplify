@@ -16,12 +16,24 @@
 #import "DiscoverViewController.h"
 #import "WishViewController.h"
 #import "PersonalViewController.h"
+#import <ViewDeck/ViewDeck.h>
 
 @interface HomTabBarController ()
 
 @end
 
 @implementation HomTabBarController
+
++(instancetype)shareInstance{
+    
+    static HomTabBarController * instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[HomTabBarController alloc] init];
+    });
+    
+    return instance;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,6 +46,8 @@
 
 
     BaseNavigationController * lookForNavigationController = [[BaseNavigationController alloc] initWithRootViewController:lookForViewController];
+    
+    lookForViewController.navigationItem.leftBarButtonItem = [self homeLeftTabBar];
 
     
     
@@ -43,6 +57,8 @@
     discoverViewController.tabBarItem.imageInsets = UIEdgeInsetsMake(8, 0, -8, 0);
     
     BaseNavigationController * discoverNavigationController = [[BaseNavigationController alloc] initWithRootViewController:discoverViewController];
+    discoverViewController.navigationItem.leftBarButtonItem = [self homeLeftTabBar];
+    
     
     WishViewController * wishViewController = [[WishViewController alloc] init];
     wishViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"心愿" image:[UIImage imageNamed:@"shop_def"]selectedImage:[UIImage imageNamed:@"shop_sel"]];
@@ -50,6 +66,8 @@
     wishViewController.tabBarItem.imageInsets = UIEdgeInsetsMake(8, 0, -8, 0);
     
     BaseNavigationController * wishNavigationController = [[BaseNavigationController alloc] initWithRootViewController:wishViewController];
+    wishViewController.navigationItem.leftBarButtonItem = [self homeLeftTabBar];
+    
     
     PersonalViewController * personalViewController = [[PersonalViewController alloc] init];
     personalViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"个人" image:[UIImage imageNamed:@"person_def"]selectedImage:[UIImage imageNamed:@"person_sel"]];
@@ -58,27 +76,31 @@
     
     BaseNavigationController * personalNavigationController = [[BaseNavigationController alloc] initWithRootViewController:personalViewController];
     
+    personalViewController.navigationItem.leftBarButtonItem = [self homeLeftTabBar];
+    
     self.viewControllers = [[NSArray alloc] initWithObjects:lookForNavigationController,discoverNavigationController,wishNavigationController, personalNavigationController,nil];
     
     
+    
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-
-#pragma mark - SlideNavigationController Methods -
-
-- (BOOL)slideNavigationControllerShouldDisplayLeftMenu
-{
-    return YES;
+/**
+ *  设置左侧的tabBarItem
+ */
+-(UIBarButtonItem*)homeLeftTabBar{
+    UIBarButtonItem * leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"tab_qworld_press"] style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonClick:)];
+    
+    return leftBarButtonItem;
 }
 
-- (BOOL)slideNavigationControllerShouldDisplayRightMenu
-{
-    return NO;
+-(void)leftBarButtonClick:(id)sender{
+    [self.viewDeckController toggleLeftViewAnimated:YES];
 }
 
 

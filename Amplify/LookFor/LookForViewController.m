@@ -7,6 +7,7 @@
 //
 
 #import "LookForViewController.h"
+#import <ViewDeck/ViewDeck.h>
 
 @interface LookForViewController ()
 
@@ -19,11 +20,13 @@
     // Do any additional setup after loading the view from its nib.
     
     self.navigationItem.title = @"物色";
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:HexRGB(0x000000)}];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:HexRGB(0x999999)}];
     
     UIBarButtonItem * rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"discover_daf"] style:UIBarButtonItemStylePlain target:self action:@selector(likeStore:)];
     
     self.navigationItem.rightBarButtonItem = rightBarButtonItem;
+    self.navigationController.navigationBar.barTintColor = HexRGBAlpha(0x000000,.6);
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,6 +39,9 @@
 //收藏
 -(void)likeStore:(id)sender{
     
+    UIViewController * viewController = [[UIViewController alloc] init];
+    viewController.view.backgroundColor = [UIColor blackColor];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle{
@@ -43,17 +49,6 @@
 }
 
 
-#pragma mark - SlideNavigationController Methods -
-
-- (BOOL)slideNavigationControllerShouldDisplayLeftMenu
-{
-    return YES;
-}
-
-- (BOOL)slideNavigationControllerShouldDisplayRightMenu
-{
-    return NO;
-}
 
 
 @end

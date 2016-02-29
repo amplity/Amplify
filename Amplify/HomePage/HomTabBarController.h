@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseNavigationController.h"
+#import "IIViewDeckLeftController.h"
 
 @interface HomTabBarController : UITabBarController
+
++(instancetype)shareInstance;
 
 @end

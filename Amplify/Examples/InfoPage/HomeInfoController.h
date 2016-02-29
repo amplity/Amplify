@@ -7,7 +7,8 @@
 //
 
 #import "BaseViewController.h"
+#import "IIViewDeckLeftController.h"
 
-@interface HomeInfoController : BaseViewController
+@interface HomeInfoController : IIViewDeckLeftController
 
 @end

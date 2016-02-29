@@ -1,9 +1,6 @@
 
-pod 'Pingpp/Alipay', '~> 2.1.0'
-pod 'Pingpp/Wx', '~> 2.1.0'
-pod 'Pingpp/ApplePay', '~> 2.1.0'
-pod 'ViewDeck'
 pod 'MBProgressHUD', '~> 0.9.2'
+pod 'ViewDeck', '~> 2.4'
 
 pod 'FMDB'
 # pod 'FMDB/FTS'   # FMDB with FTS

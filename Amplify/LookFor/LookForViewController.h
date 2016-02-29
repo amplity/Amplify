@@ -7,8 +7,7 @@
 //
 
 #import "BaseViewController.h"
-#import "SlideNavigationController.h"
 
-@interface LookForViewController : BaseViewController<SlideNavigationControllerDelegate>
+@interface LookForViewController : BaseViewController
 
 @end

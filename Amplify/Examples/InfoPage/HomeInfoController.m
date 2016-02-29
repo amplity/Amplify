@@ -16,6 +16,7 @@
 #import "TestWebViewController.h"
 #import "FTWViewController.h"
 #import "WebCacheViewController.h"
+#import "HomTabBarController.h"
 
 @interface HomeInfoController ()
 
@@ -88,7 +89,18 @@
     [nextBtn addTarget:self action:@selector(infoNextClick) forControlEvents:UIControlEventTouchUpInside];
     
     
-    [self.navigationController pushViewController:viewController animated:YES];
+//    [self.navigationController pushViewController:viewController animated:YES];
+    
+    [self.viewDeckController closeLeftViewBouncing:^(IIViewDeckController *controller) {
+        UITabBarController * homeTabBarController = (UITabBarController*)controller.centerController;
+        UINavigationController * navigationController = (homeTabBarController.selectedViewController);
+        
+        
+        TestWebViewController * testWebController = [[TestWebViewController alloc] init];
+        [navigationController pushViewController:testWebController animated:YES];
+        
+    }];
+    
 }
 
 -(void)infoNextClick{

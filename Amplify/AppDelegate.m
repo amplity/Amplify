@@ -14,6 +14,7 @@
 #import "HomeInfoController.h"
 #import "SlideNavigationController.h"
 #import "LookForViewController.h"
+#import <ViewDeck/ViewDeck.h>
 
 @interface AppDelegate ()
 
@@ -27,6 +28,9 @@
     
     [self setupAppInit];
     
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];//白色
+//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:NO];//黑色
+    
     return YES;
 }
 
@@ -37,7 +41,16 @@
     
     if (/* DISABLES CODE */ (1)) {
 
-        startViewController = [[ZYWContainerViewController alloc] init];
+//        startViewController = [[ZYWContainerViewController alloc] init];
+        
+        IIViewDeckLeftController * iiViewDeckLeftController = [[HomeInfoController alloc] init];
+        
+        
+        IIViewDeckController * iiViewDeckViewController = [[IIViewDeckController alloc] initWithCenterViewController:[[HomTabBarController alloc] init] leftViewController:iiViewDeckLeftController];
+        
+        iiViewDeckViewController.centerhiddenInteractivity = IIViewDeckCenterHiddenNotUserInteractiveWithTapToClose;
+        
+        startViewController = iiViewDeckViewController;
         
         
     }else{

@@ -17,6 +17,7 @@
 #pragma -marke life cycle
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
@@ -35,11 +36,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-//状态栏的颜色
-- (UIStatusBarStyle)preferredStatusBarStyle{
-    //subClass
-    return UIStatusBarStyleLightContent;
-}
+
 
 
 #pragma mark - UINavigationControllerDelegate
