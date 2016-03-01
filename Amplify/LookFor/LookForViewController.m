@@ -28,6 +28,31 @@
     self.navigationController.navigationBar.barTintColor = HexRGBAlpha(0x000000,.6);
     
     
+    
+    NSArray *familyNames = [UIFont familyNames];
+    for( NSString *familyName in familyNames ){
+        
+        printf( "Family: %s \n", [familyName UTF8String] );
+        
+        NSArray *fontNames = [UIFont fontNamesForFamilyName:familyName];
+        for( NSString *fontName in fontNames ){
+            
+            printf( "\tFont: %s \n", [fontName UTF8String] );
+        }
+    }
+    //设置字体
+    
+    for (UITabBarItem * tabBarItem in self.tabBar.items) {
+        
+        NSDictionary * fontDic=[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Baskerville" size:20.0],NSFontAttributeName, nil];
+        [tabBarItem setTitleTextAttributes:fontDic forState:UIControlStateNormal];
+        
+        
+    }
+    
+    self.tabBar.selectedItem = self.tabBar.items[0];
+    
+    [self viewShowForIndex:0];
 }
 
 
@@ -48,17 +73,13 @@
     [self.navigationController pushViewController:articleCollectViewController animated:YES];
 }
 
-
-#pragma mark - UITabBarDelegate
-
-- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
-    
+-(void)viewShowForIndex:(NSInteger)index{
     self.oneView.hidden = YES;
     self.twoView.hidden = YES;
     self.threeView.hidden = YES;
     self.fourView.hidden = YES;
     
-    switch (item.tag) {
+    switch (index) {
         case 0:
             self.oneView.hidden = NO;
             break;
@@ -75,6 +96,14 @@
         default:
             break;
     }
+}
+
+
+#pragma mark - UITabBarDelegate
+
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
+    [self viewShowForIndex:item.tag];
+    
 }
 
 
