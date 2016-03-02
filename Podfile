@@ -1,6 +1,7 @@
 
 pod 'MBProgressHUD', '~> 0.9.2'
 pod 'ViewDeck', '~> 2.4'
+pod 'SCTableViewCell'
 
 pod 'FMDB'
 # pod 'FMDB/FTS'   # FMDB with FTS
@@ -19,3 +20,4 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 
 pod 'AFNetworking', '~> 3.0'
+

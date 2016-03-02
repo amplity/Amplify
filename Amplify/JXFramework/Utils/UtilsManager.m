@@ -85,4 +85,19 @@
     return topVC;
 }
 
+
+-(void)showFontSystem{
+    NSArray *familyNames = [UIFont familyNames];
+    for( NSString *familyName in familyNames ){
+        
+        DLog("Family: %s \n", [familyName UTF8String])
+        
+        NSArray *fontNames = [UIFont fontNamesForFamilyName:familyName];
+        for( NSString *fontName in fontNames ){
+            
+            DLog( "\tFont: %s \n", [fontName UTF8String]);
+        }
+    }
+}
+
 @end

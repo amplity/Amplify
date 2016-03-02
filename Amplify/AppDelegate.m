@@ -40,18 +40,18 @@
     UIViewController * startViewController = nil;
     
     if (/* DISABLES CODE */ (1)) {
-
-//        startViewController = [[ZYWContainerViewController alloc] init];
         
-        IIViewDeckLeftController * iiViewDeckLeftController = [[HomeInfoController alloc] init];
+//        IIViewDeckLeftController * iiViewDeckLeftController = [[HomeInfoController alloc] init];
+//        
+//        
+//        IIViewDeckController * iiViewDeckViewController = [[IIViewDeckController alloc] initWithCenterViewController:[[HomTabBarController alloc] init] leftViewController:iiViewDeckLeftController];
+//        
+//        iiViewDeckViewController.centerhiddenInteractivity = IIViewDeckCenterHiddenNotUserInteractiveWithTapToClose;
+//        
+//        startViewController = iiViewDeckViewController;
         
         
-        IIViewDeckController * iiViewDeckViewController = [[IIViewDeckController alloc] initWithCenterViewController:[[HomTabBarController alloc] init] leftViewController:iiViewDeckLeftController];
-        
-        iiViewDeckViewController.centerhiddenInteractivity = IIViewDeckCenterHiddenNotUserInteractiveWithTapToClose;
-        
-        startViewController = iiViewDeckViewController;
-        
+         startViewController = [[HomTabBarController alloc] init];
         
     }else{
         startViewController = [[BootViewController alloc] init];

@@ -28,18 +28,6 @@
     self.navigationController.navigationBar.barTintColor = HexRGBAlpha(0x000000,.6);
     
     
-    
-    NSArray *familyNames = [UIFont familyNames];
-    for( NSString *familyName in familyNames ){
-        
-        printf( "Family: %s \n", [familyName UTF8String] );
-        
-        NSArray *fontNames = [UIFont fontNamesForFamilyName:familyName];
-        for( NSString *fontName in fontNames ){
-            
-            printf( "\tFont: %s \n", [fontName UTF8String] );
-        }
-    }
     //设置字体
     
     for (UITabBarItem * tabBarItem in self.tabBar.items) {

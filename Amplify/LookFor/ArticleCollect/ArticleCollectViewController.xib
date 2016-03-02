@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArticleCollectViewController">
             <connections>
+                <outlet property="deleteView" destination="tZS-Hu-2rR" id="xdw-Es-Gis"/>
                 <outlet property="tableview" destination="Tjf-5o-qg8" id="z9x-GB-jZD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -24,13 +25,37 @@
                         <outlet property="delegate" destination="-1" id="KaK-Bc-pwd"/>
                     </connections>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZS-Hu-2rR">
+                    <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lg2-mc-FVa">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                            <color key="backgroundColor" red="0.49019607840000001" green="0.070588235289999995" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="删除"/>
+                            <connections>
+                                <action selector="deleteBtnClick:" destination="-1" eventType="touchUpInside" id="1Yj-ov-Cj1"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Lg2-mc-FVa" secondAttribute="trailing" id="1L3-dk-p3W"/>
+                        <constraint firstAttribute="height" constant="50" id="B8m-Yy-PkI"/>
+                        <constraint firstAttribute="bottom" secondItem="Lg2-mc-FVa" secondAttribute="bottom" id="Bvs-Hj-jc2"/>
+                        <constraint firstItem="Lg2-mc-FVa" firstAttribute="top" secondItem="tZS-Hu-2rR" secondAttribute="top" id="xdv-ib-698"/>
+                        <constraint firstItem="Lg2-mc-FVa" firstAttribute="leading" secondItem="tZS-Hu-2rR" secondAttribute="leading" id="yGD-vQ-HJx"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Tjf-5o-qg8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4NE-vy-xK9"/>
                 <constraint firstAttribute="bottom" secondItem="Tjf-5o-qg8" secondAttribute="bottom" id="4xW-eW-QlG"/>
+                <constraint firstAttribute="trailing" secondItem="tZS-Hu-2rR" secondAttribute="trailing" id="CdJ-Ou-kzW"/>
                 <constraint firstAttribute="trailing" secondItem="Tjf-5o-qg8" secondAttribute="trailing" id="RTv-LM-2lj"/>
+                <constraint firstItem="tZS-Hu-2rR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aVg-Kt-1Xx"/>
                 <constraint firstItem="Tjf-5o-qg8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aYR-U0-eKc"/>
+                <constraint firstAttribute="bottom" secondItem="tZS-Hu-2rR" secondAttribute="bottom" id="hTF-Zt-oQK"/>
             </constraints>
         </view>
     </objects>

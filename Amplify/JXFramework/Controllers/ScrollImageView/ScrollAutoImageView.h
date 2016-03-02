@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @class ScrollAutoImageView;
 @protocol ScrollAutoImageViewDelegate <NSObject>
 
@@ -15,6 +16,10 @@
 
 @end
 
+
+/**
+ *  广告位
+ */
 @interface ScrollAutoImageView : UIView<UIScrollViewDelegate>{
     __unsafe_unretained id <ScrollAutoImageViewDelegate> _delegate;
 }

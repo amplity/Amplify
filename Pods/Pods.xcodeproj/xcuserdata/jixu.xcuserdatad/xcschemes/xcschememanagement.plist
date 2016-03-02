@@ -34,6 +34,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SCTableViewCell-SCTableViewCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SCTableViewCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,12 +62,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>00890D79908A203B0117E56663016F56</key>
+		<key>30BEB1ED50B14C7B3F51CFA56D611D78</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1F9A6AF553FBFF04446E255DE6554088</key>
+		<key>3390191465EB261E9F0B17A76270731A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>76487128AF81A091EC53EA12827C2A0B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +87,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>96CF102A58C91D8C22CBC003246BB6F6</key>
+		<key>96E95F5C299B80A57348F3DA20944217</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,7 +102,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AEFED44AE1AB8CAE9258968D53B05E0F</key>
+		<key>CE80A13125B8B834DC02F2FCB7DEB4DD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FB638553FD34A64CED3A0C4A8AA1ED27</key>
 		<dict>
 			<key>primary</key>
 			<true/>

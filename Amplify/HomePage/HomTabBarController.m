@@ -99,6 +99,12 @@
     return leftBarButtonItem;
 }
 
+
+/**
+ *  点击左上角，滑动左边视图
+ *
+ *  @param sender <#sender description#>
+ */
 -(void)leftBarButtonClick:(id)sender{
     [self.viewDeckController toggleLeftViewAnimated:YES];
 }

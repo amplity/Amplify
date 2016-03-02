@@ -20,6 +20,7 @@ PODS:
   - MBProgressHUD (0.9.2)
   - MJExtension (3.0.10)
   - MJRefresh (3.1.0)
+  - SCTableViewCell (0.1.0)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
@@ -32,6 +33,7 @@ DEPENDENCIES:
   - MBProgressHUD (~> 0.9.2)
   - MJExtension
   - MJRefresh
+  - SCTableViewCell
   - SDWebImage (~> 3.7)
   - TTTAttributedLabel
   - ViewDeck (~> 2.4)
@@ -42,6 +44,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
+  SCTableViewCell: 37fd004874dd18350da34440e2a3fa42b1375321
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
   ViewDeck: e4c744cb5383cbae40cf286c6e7246df33962020
