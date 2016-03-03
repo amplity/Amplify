@@ -14,4 +14,11 @@
 #pragma mark 单元格高度
 @property (assign,nonatomic) CGFloat height;
 
+
+/**
+ *  设置cell 状态数据
+ *
+ *  @param obj
+ */
+-(void)setCellData:(id)obj;
 @end

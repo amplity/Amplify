@@ -9,5 +9,10 @@
 #import "BaseTableCell.h"
 
 @interface ArticleCollectCell : BaseTableCell
+@property (weak, nonatomic) IBOutlet UIImageView *hearImage;
+
+@property (weak, nonatomic) IBOutlet UILabel *brandLab;
+@property (weak, nonatomic) IBOutlet UITextView *infoTxt;
+@property (weak, nonatomic) IBOutlet UIButton *selectImageBtn;
 
 @end

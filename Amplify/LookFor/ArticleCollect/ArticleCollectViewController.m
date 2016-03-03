@@ -12,11 +12,26 @@
 #import "BaseTableCell.h"
 #import "SCTableViewController.h"
 
+#import "ArticleCollectCell.h"
+
+static NSString * CellSelectAll = @"CellSelectAll";//全选中
+static NSString * CellSelectAllCancle = @"CellSelectAllCancle";//全取消
+static NSString * CellSelectAlong = @"CellSelectAlong";//单独点击
+
 @interface ArticleCollectViewController (){
     NSMutableArray *_contacts;//联系人模型
     
-    //选中的cell
-    NSMutableArray * selectedDic;
+    //编辑
+    UIBarButtonItem * rightBarButtonItem;
+    
+    //编辑状态
+    BOOL tabEditing;
+    
+    
+    //选中的header部分
+    NSMutableDictionary * selectedHeaderDic;
+    //选中的tableViewCell
+    NSMutableDictionary * selectedTableViewCellDic;
 }
 
 @end
@@ -27,10 +42,27 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    UIBarButtonItem * rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"discover_daf"] style:UIBarButtonItemStylePlain target:self action:@selector(editClick:)];
-    self.navigationItem.rightBarButtonItem = rightBarButtonItem;
-    
+    tabEditing = NO;
+    [self editRightBar];
     self.deleteView.hidden = YES;
+    
+    
+    selectedHeaderDic = [[NSMutableDictionary alloc] init];
+    selectedTableViewCellDic = [[NSMutableDictionary alloc] init];
+}
+
+/**
+ *  设置右上角的编辑
+ */
+-(void)editRightBar{
+    if(tabEditing){
+        rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(editClick:)];
+        self.navigationItem.rightBarButtonItem = rightBarButtonItem;
+    }else{
+        rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"discover_daf"] style:UIBarButtonItemStylePlain target:self action:@selector(editClick:)];
+        
+    }
+    self.navigationItem.rightBarButtonItem = rightBarButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,12 +72,12 @@
 
 //编辑
 -(void)editClick:(id)sender{
-//    SCTableViewController * scTable = [[SCTableViewController alloc] init];
-//    [self.navigationController pushViewController:scTable animated:YES];
+
+    tabEditing = !tabEditing;
+    self.deleteView.hidden = !tabEditing;
+    [self.tableview reloadData];
     
-    [self.tableview setEditing:!self.tableview.isEditing];
-    self.deleteView.hidden = !self.tableview.isEditing;
-    
+    [self editRightBar];
 }
 
 #pragma mark 加载数据
@@ -93,8 +125,7 @@
     
     for (KCContactGroup* groupKcc in _contacts) {
         for (KCContact * contactKc in groupKcc.contacts) {
-            BaseTableCell * cell = [[BaseTableCell alloc] init];
-            cell.height = 80;
+            BaseTableCell * cell = [[ArticleCollectCell alloc] init];
             [self.cellStyles addObject:cell];
         }
     }
@@ -116,24 +147,39 @@
     NSLog(@"生成单元格(组：%li,行%li)",(long)indexPath.section,(long)indexPath.row);
     KCContactGroup *group=_contacts[indexPath.section];
     KCContact *contact=group.contacts[indexPath.row];
-    
-    static NSString* identifier = @"kcMinIdentifier";
-    BaseTableCell *cell=[tableView dequeueReusableCellWithIdentifier:identifier];
+
+    static NSString* identifier = @"ArticleCollectIdentifier";
+    ArticleCollectCell *cell=[tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
-        cell=[[BaseTableCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
+        cell=[[ArticleCollectCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
+    [cell setCellData:contact];
+    cell.selectImageBtn.hidden = !tabEditing;//编辑状态
+   
     
-    
-    if (indexPath.section==0) {
-        //        cell.accessoryView = [[UISwitch alloc] init];
-        cell.accessoryType =UITableViewCellAccessoryDisclosureIndicator ;
+    if (tabEditing) {//编辑状态下
+        
+        
+        if ([[selectedTableViewCellDic objectForKey:[NSString stringWithFormat:@"%ld",(long)indexPath.section]] isEqualToString:CellSelectAll]) {
+            cell.selectImageBtn.selected = YES;
+            [cell.selectImageBtn setTitle:@"被选中" forState:UIControlStateSelected];
+        }else if([[selectedTableViewCellDic objectForKey:[NSString stringWithFormat:@"%ld",(long)indexPath.section]] isEqualToString:CellSelectAllCancle]){
+            cell.selectImageBtn.selected = NO;
+            [cell.selectImageBtn setTitle:@"未选中" forState:UIControlStateNormal];
+        }
+        
+        
+        //单个点击状态
+        if([[selectedTableViewCellDic objectForKey:indexPath] isEqualToString:CellSelectAlong]){
+            [cell.selectImageBtn setTitle:@"被选中" forState:UIControlStateSelected];
+        }else{
+            [cell.selectImageBtn setTitle:@"未选中" forState:UIControlStateSelected];
+        }
     }else{
-        cell.accessoryType =UITableViewCellAccessoryDetailDisclosureButton ;
+        
     }
     
-    cell.textLabel.text=[contact getName];
-    cell.detailTextLabel.text=contact.phoneNumber;
     return cell;
 }
 
@@ -154,17 +200,19 @@
 
 //添加一项
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (self.tableview.isEditing) {
-        [selectedDic addObject:indexPath];
+    if (tabEditing) {
+        [selectedTableViewCellDic setObject:CellSelectAlong forKey:indexPath];
        
+        [self.tableview reloadData];
     }
 }
 
 //取消一项
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (self.tableview.isEditing) {
-        [selectedDic removeObject:indexPath];
+    if (tabEditing) {
+        [selectedTableViewCellDic removeObjectForKey:indexPath];
         
+        [self.tableview reloadData];
     }
 }
 
@@ -241,11 +289,106 @@
     return  @[deleteRowAction,collectRowAction];
 }
 
--(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (self.tableview.isEditing) {
-        return UITableViewCellEditingStyleInsert|UITableViewCellEditingStyleDelete;
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 40;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 40;
+}
+
+-(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    UIView * headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, MAIN_SCREEN_WITH, 40)];
+    
+    UIButton * selectedBtn = [[UIButton alloc] initWithFrame:CGRectMake(MAIN_SCREEN_WITH-200,0 , 200, 40)];
+    
+    [selectedBtn setTitleColor:HexRGB(0x000000) forState:UIControlStateNormal];
+    
+    [selectedBtn addTarget:self action:@selector(headerBtnClick:withSection:) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    [headerView addSubview:selectedBtn];
+    
+    UILabel * titleLab = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, MAIN_SCREEN_WITH, 40)];
+    titleLab.textAlignment = NSTextAlignmentCenter;
+    KCContactGroup *group=_contacts[section];
+    [titleLab setText:group.name];
+    [headerView addSubview:titleLab];
+    
+    if (tabEditing) {//编辑状态下设置header
+        
+        if ([[selectedTableViewCellDic objectForKey:[NSString stringWithFormat:@"%ld",(long)section]] isEqualToString:CellSelectAll]) {//当前分组的cell全部选中
+            [selectedBtn setTitle:@"全部取消" forState:UIControlStateNormal];
+        }else if([[selectedTableViewCellDic objectForKey:[NSString stringWithFormat:@"%ld",(long)section]] isEqualToString:CellSelectAllCancle]){
+            [selectedBtn setTitle:@"全部选中" forState:UIControlStateNormal];
+        }
+        
+        selectedBtn.hidden = NO;
+    }else{
+        selectedBtn.hidden = YES;
     }
-    return UITableViewCellEditingStyleDelete;
+    
+    return headerView;
+}
+
+
+/**
+ *  当前分组下cell 是否全部选中
+ *
+ *  @param section 分组索引
+ *
+ *  @return
+ */
+-(BOOL)cellSelectedOnSection:(NSInteger)section{
+    KCContactGroup *group=_contacts[section];
+    
+    int currentSectionCellCout = 0;
+    
+    for (NSString* cellSection  in selectedTableViewCellDic) {
+        if (cellSection.integerValue == section) {//在同一的分组下
+            currentSectionCellCout++;
+        }
+    }
+    
+    
+    if (group.contacts.count == currentSectionCellCout) {
+        return YES;
+    }
+    
+    return NO;
+}
+
+#pragma mark 重新设置单元格高度
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    //KCStatusTableViewCell *cell=[tableView cellForRowAtIndexPath:indexPath];
+    ArticleCollectCell *cell= self.cellStyles[indexPath.row];
+    KCContactGroup *group=_contacts[indexPath.section];
+    KCContact *contact=group.contacts[indexPath.row];
+    [cell setCellData:contact];
+    
+    return cell.height;
+}
+
+/**
+ *  点击分组头部
+ *
+ *  @param sender <#sender description#>
+ */
+-(void)headerBtnClick:(id)sender withSection:(NSInteger)section{
+    
+    UIButton * btn = sender;
+    
+    NSString * sectionStr = [NSString stringWithFormat:@"%ld",(long)section];
+    
+    if ([btn.titleLabel.text isEqualToString:@"全部取消"]) {
+        [selectedTableViewCellDic setObject:CellSelectAll forKey:sectionStr];
+    }else{
+        [selectedTableViewCellDic setObject:CellSelectAllCancle forKey:sectionStr];
+    }
+    
+    
+    [self.tableview reloadData];
 }
 
 

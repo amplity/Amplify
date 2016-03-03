@@ -41,17 +41,18 @@
     
     if (/* DISABLES CODE */ (1)) {
         
-//        IIViewDeckLeftController * iiViewDeckLeftController = [[HomeInfoController alloc] init];
-//        
-//        
-//        IIViewDeckController * iiViewDeckViewController = [[IIViewDeckController alloc] initWithCenterViewController:[[HomTabBarController alloc] init] leftViewController:iiViewDeckLeftController];
-//        
-//        iiViewDeckViewController.centerhiddenInteractivity = IIViewDeckCenterHiddenNotUserInteractiveWithTapToClose;
-//        
-//        startViewController = iiViewDeckViewController;
+        IIViewDeckLeftController * iiViewDeckLeftController = [[HomeInfoController alloc] init];
         
         
-         startViewController = [[HomTabBarController alloc] init];
+        IIViewDeckController * iiViewDeckViewController = [[IIViewDeckController alloc] initWithCenterViewController:[[HomTabBarController alloc] init] leftViewController:iiViewDeckLeftController];
+        
+        iiViewDeckViewController.centerhiddenInteractivity = IIViewDeckCenterHiddenNotUserInteractiveWithTapToClose;
+        
+        startViewController = iiViewDeckViewController;
+        
+        
+        
+//         startViewController = [[HomTabBarController alloc] init];
         
     }else{
         startViewController = [[BootViewController alloc] init];
