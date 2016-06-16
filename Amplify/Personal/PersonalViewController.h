@@ -6,8 +6,8 @@
 //  Copyright © 2016年 hm. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "BaseWebViewController.h"
 
-@interface PersonalViewController : BaseViewController
+@interface PersonalViewController : BaseWebViewController<LoginResultDelegate>
 
 @end

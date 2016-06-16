@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController">
+            <connections>
+                <outlet property="baseWebView" destination="q39-Ut-7VM" id="HGs-7g-Aut"/>
+                <outlet property="view" destination="iN0-l3-epB" id="0zb-NU-6DR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q39-Ut-7VM" customClass="BaseWebView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="BtS-ZP-TUp"/>
+                    </connections>
+                </webView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KSy-Z7-WXw">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                    <color key="backgroundColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="xh8-19-XSb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="KSy-Z7-WXw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2vf-Y6-VM1"/>
+                <constraint firstAttribute="trailing" secondItem="KSy-Z7-WXw" secondAttribute="trailing" id="8Q2-yn-3D3"/>
+                <constraint firstAttribute="bottom" secondItem="q39-Ut-7VM" secondAttribute="bottom" id="Bbm-94-pAm"/>
+                <constraint firstItem="q39-Ut-7VM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PPY-Pn-cnA"/>
+                <constraint firstItem="q39-Ut-7VM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cGc-A7-YLq"/>
+                <constraint firstAttribute="trailing" secondItem="q39-Ut-7VM" secondAttribute="trailing" id="xEg-AW-4wc"/>
+                <constraint firstItem="KSy-Z7-WXw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xR0-gt-HYk"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

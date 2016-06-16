@@ -14,4 +14,5 @@
 
 +(instancetype)shareInstance;
 
+-(void)changeBarViewController:(NSString*)indexStr;
 @end

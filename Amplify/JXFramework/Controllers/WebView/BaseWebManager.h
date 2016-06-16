@@ -23,7 +23,7 @@ typedef void(^webViewJsToOC)(id jsToObject);
  *
  *  @return js 返回数据
  */
--(NSDictionary*)fixJavascriptDataByFun:(NSString *)funName withWebView:(UIWebView*)webView;
+-(NSObject*)fixJavascriptDataByFun:(NSString *)funName withWebView:(UIWebView*)webView;
 
 /**
  *  js传值给oc
@@ -45,5 +45,16 @@ typedef void(^webViewJsToOC)(id jsToObject);
  *  @return js返回值
  */
 -(NSDictionary*)fixJavascriptDataByFunWithParameter:(NSString *)funName withParameter:(NSArray*)parameters withWebView:(UIWebView*)webView;
+
+
+
+/**
+ *  webview loading url链接 带参数
+ *
+ *  @param parameter
+ *
+ *  @return
+ */
+-(NSString*)getCombineUrlByParameter:(NSString*)urlName withParameter:(NSDictionary*)parameter;
     
 @end

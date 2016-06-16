@@ -39,7 +39,11 @@
 -(void)webViewDidFinishLoad:(UIWebView *)webView{
     
     NSString* givemetoken =  [NSString stringWithFormat:@"sendData('%@');",@"fffffffffff"];
-    [[BaseWebManager shareWebManager] fixJavascriptDataByFun:@"sendData" withWebView:self.baseWebView];
+//    [[BaseWebManager shareWebManager] fixJavascriptDataByFun:@"$obj.say()" withWebView:self.baseWebView];
+    
+    [[BaseWebManager shareWebManager] sendJsDataForObjcet:@"$obj.say" withWebView:self.baseWebView withBlock:^(id jsToObject) {
+        DLog(@"$obj.say()");
+    }];
 }
 
 

@@ -19,13 +19,32 @@
 #define  WeChatID      @"wx42b82fdade8ab3a5"
 #define  WeChatSecret  @"06e3f6f4f9e16a488dd7bc367dcdf4f2"
 
-#define ZfbId          @"zhifubao"
 
-#define  PrivateKey    @"makup^2014"
+#define QQAppId         @"1105289385"
+#define QQAppKey        @"KmkBChfCc99m43ZE"
+
+#define ZfbId          @"zhifubaoPingxxHm"
+
+#define AlipayHK       @"alipayHK";
+
+//#define  PrivateKey    @"makup^2014"
 #define  themeEncrypt  @"makeup$2015"
 
-//Every update change here
-#define  VersionNum    @"1.1";
+//极光推送
+#define JPushAppKey  @"64ff6d7e4bc0aa3599b21f69"
+#define JPushChannel  @"AppStore"
+#define JPushIsProduction  @"FALSE"
+
+
+//友盟
+#define UMengAppKey  @"575e85ff67e58ebca00029db"
+#define UMengChannel  @"App Store"
+
+
+
+//美恰
+#define MeiQiaAppKey    @"057519e4460b13e3966b155ab43dbace"
+#define MeiQiaSecretKey   @"$2a$12$.7raFPGkArCLHzobqwHixeKnXx3UdB/8W5GXhiUrVSVQPSELQ5mz2"
 
 
 
@@ -46,7 +65,11 @@
 #define kScreen_Frame    (CGRectMake(0, 0 ,MAIN_SCREEN_WITH,MAIN_SCREEN_HIGHT))
 #define kUser [NSUserDefaults standardUserDefaults]
 
+#define DEVICE_IS_IPHONE5 ([[UIScreen mainScreen] bounds].size.height == 568)
 
+#define DEVICE_IS_IPHONE6 ([[UIScreen mainScreen] bounds].size.height == 667)
+
+#define DEVICE_IS_IPHONE6Plus  ([[UIScreen mainScreen] bounds].size.height == 736)
 
 
 #define BACKGROUND_COLOR [UIColor colorWithRed:242.0/255.0 green:236.0/255.0 blue:231.0/255.0 alpha:1.0]

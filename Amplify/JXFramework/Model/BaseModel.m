@@ -10,6 +10,7 @@
 
 @implementation BaseModel
 
+
 @end
 
 @implementation ResponseBody

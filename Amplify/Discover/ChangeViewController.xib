@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangeViewController">
+            <connections>
+                <outlet property="infoTabble" destination="7J1-p1-lk8" id="3eL-HL-7tL"/>
+                <outlet property="leftView" destination="Q3m-G6-BOq" id="ynd-U3-TYv"/>
+                <outlet property="recommendScrollView" destination="P6W-87-ZTb" id="2b5-L7-fK8"/>
+                <outlet property="searchDisplayController" destination="MzE-O0-paG" id="FbI-Ll-oSk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nXk-NV-Pzn">
+                    <rect key="frame" x="0.0" y="63" width="600" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="BAN-pq-f5H"/>
+                    </constraints>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P6W-87-ZTb">
+                    <rect key="frame" x="0.0" y="64" width="600" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="rha-DA-ne7"/>
+                    </constraints>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q3m-G6-BOq">
+                    <rect key="frame" x="0.0" y="124" width="200" height="474"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="ZUT-di-EeX"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7J1-p1-lk8">
+                    <rect key="frame" x="200" y="124" width="400" height="474"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="DJ2-0M-fG4"/>
+                        <outlet property="delegate" destination="-1" id="v8x-u5-CRP"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="nXk-NV-Pzn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="63" id="23r-or-7Iz"/>
+                <constraint firstItem="nXk-NV-Pzn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3Sb-Kn-QRU"/>
+                <constraint firstItem="Q3m-G6-BOq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9y0-mq-pZD"/>
+                <constraint firstItem="7J1-p1-lk8" firstAttribute="leading" secondItem="Q3m-G6-BOq" secondAttribute="trailing" id="Avb-G1-4u8"/>
+                <constraint firstItem="7J1-p1-lk8" firstAttribute="top" secondItem="P6W-87-ZTb" secondAttribute="bottom" id="CYk-Fg-8Rr"/>
+                <constraint firstItem="P6W-87-ZTb" firstAttribute="top" secondItem="nXk-NV-Pzn" secondAttribute="bottom" id="F4F-EK-XKP"/>
+                <constraint firstItem="P6W-87-ZTb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Fno-30-OmH"/>
+                <constraint firstAttribute="bottom" secondItem="Q3m-G6-BOq" secondAttribute="bottom" constant="2" id="KH4-QB-kWc"/>
+                <constraint firstAttribute="trailing" secondItem="7J1-p1-lk8" secondAttribute="trailing" id="MKy-hv-StZ"/>
+                <constraint firstAttribute="bottom" secondItem="7J1-p1-lk8" secondAttribute="bottom" constant="2" id="VLG-dA-NTw"/>
+                <constraint firstAttribute="trailing" secondItem="P6W-87-ZTb" secondAttribute="trailing" id="cIo-tN-8QX"/>
+                <constraint firstItem="Q3m-G6-BOq" firstAttribute="top" secondItem="P6W-87-ZTb" secondAttribute="bottom" id="fJh-yE-7b4"/>
+                <constraint firstAttribute="trailing" secondItem="nXk-NV-Pzn" secondAttribute="trailing" id="mKj-sR-tIo"/>
+            </constraints>
+        </view>
+        <searchDisplayController id="MzE-O0-paG">
+            <connections>
+                <outlet property="delegate" destination="-1" id="Sjm-fm-8qV"/>
+                <outlet property="searchContentsController" destination="-1" id="2tw-Qu-bfV"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="Tcq-Uk-cdQ"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="Svp-nB-ubK"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+</document>

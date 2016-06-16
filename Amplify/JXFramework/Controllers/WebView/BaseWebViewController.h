@@ -8,8 +8,21 @@
 
 #import "BaseViewController.h"
 #import "BaseWebView.h"
+#import "BaseWebManager.h"
+#import "MBProgressHUD.h"
+#import "BaseWebControllerManager.h"
 
 @interface BaseWebViewController : BaseViewController<UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet BaseWebView *baseWebView;
+
+@property (weak,nonatomic) MBProgressHUD *hud;
+
+@property (nonatomic, strong) NSString *refrshUrl;
+
+//下拉刷新
+-(void)onGoDownRefreshWeb:(void(^)())refreshDownCompleted;
+
+
+-(void)goBlackView;
 
 @end

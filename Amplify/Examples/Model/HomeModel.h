@@ -14,7 +14,6 @@
 
 @property (nonatomic) HomeBody * responseBody;
 
-@property (nonatomic) NSObject * responseHead;
 
 @end
 

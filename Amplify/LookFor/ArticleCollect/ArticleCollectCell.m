@@ -11,7 +11,7 @@
 
 @implementation ArticleCollectCell
 
--(void)initSubView{
+-(void)initSubView:(BaseTableCell*)baseTableCell{
     
 }
 

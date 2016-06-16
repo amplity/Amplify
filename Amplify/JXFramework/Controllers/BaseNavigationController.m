@@ -8,7 +8,9 @@
 
 #import "BaseNavigationController.h"
 
-@interface BaseNavigationController ()
+@interface BaseNavigationController (){
+    
+}
 
 @end
 
@@ -29,9 +31,14 @@
     if (self.viewControllers.count) {
         viewController.hidesBottomBarWhenPushed = YES;
     }
+
     
     [super pushViewController:viewController animated:animated];
 }
+
+
+
+
 
 
 

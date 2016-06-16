@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LookForWeb3ViewController">
+            <connections>
+                <outlet property="baseWebView" destination="jyF-EF-2Xu" id="Rnn-Ys-75u"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jyF-EF-2Xu" customClass="BaseWebView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="550"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="jZT-0c-hhp"/>
+                    </connections>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jyF-EF-2Xu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HzK-4i-bz6"/>
+                <constraint firstAttribute="trailing" secondItem="jyF-EF-2Xu" secondAttribute="trailing" id="Ogo-HM-4aC"/>
+                <constraint firstAttribute="bottom" secondItem="jyF-EF-2Xu" secondAttribute="bottom" constant="50" id="Txw-7b-Qal"/>
+                <constraint firstItem="jyF-EF-2Xu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="z8O-K1-KSk"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

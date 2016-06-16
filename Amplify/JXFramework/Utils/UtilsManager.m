@@ -100,4 +100,29 @@
     }
 }
 
+
+-(void)showHoldLanguage{
+    NSUserDefaults *defaults = [ NSUserDefaults standardUserDefaults ];
+    // 取得 iPhone 支持的所有语言设置
+    NSArray *languages = [defaults objectForKey : @"AppleLanguages" ];
+    
+    DLog(@"%@",languages);
+}
+
+-(NSString*)getCurrentLanguage{
+    NSArray *languages = [NSLocale preferredLanguages];
+    NSString *currentLanguage = [languages objectAtIndex:0];
+    
+    return currentLanguage;
+}
+
+
+-(void)showDoLog:(UIViewController*)fromViewController withLogStr:(NSString*)logStr{
+    NSString * classStr = NSStringFromClass([fromViewController class]);
+    
+    NSString * showErrorStr = [NSString stringWithFormat:@"%@==%@",classStr,logStr];
+}
+
+
+
 @end

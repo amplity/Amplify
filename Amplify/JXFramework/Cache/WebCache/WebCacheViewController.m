@@ -26,7 +26,11 @@
     [CustomURLCache setSharedURLCache:urlCache];
     
 
-    NSURL *url = [NSURL URLWithString:@"http://www.baidu.com"];
+//    NSURL *url = [NSURL URLWithString:@"http://www.baidu.com"];
+    NSString *basePath = [[NSBundle mainBundle]bundlePath];
+    NSString *helpHtmlPath = [basePath stringByAppendingPathComponent:@"amplifyTest.html"];
+    
+    NSURL * url = [NSURL URLWithString:helpHtmlPath];
     NSURLRequest * urlRequest = [NSURLRequest requestWithURL:url];
     
     [self.baseWebView loadRequest:urlRequest];

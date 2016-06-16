@@ -13,7 +13,6 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        [self initSubView];
         return [self loadCellNib];
     }
     return self;
@@ -32,7 +31,7 @@
     
 }
 
--(void)initSubView{
+-(void)initSubView:(BaseTableCell*)baseTableCell{
     
 }
 
@@ -54,12 +53,19 @@
     // 加载nib
     baseTableCell = [arrayOfViews objectAtIndex:0];
     
+    [self initSubView:baseTableCell];
+    
     return baseTableCell;
 }
 
 
 -(void)setCellData:(id)obj{
     //subClass
+}
+
+
+-(void)baseTableCellClick:(NSString*)clickName withObjec:(id)obj{
+    [self.baseTableCellDelegate baseTableCellClick:clickName withObjec:obj];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

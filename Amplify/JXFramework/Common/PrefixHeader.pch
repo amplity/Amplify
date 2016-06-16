@@ -17,5 +17,12 @@
 #import <SystemConfiguration/SystemConfiguration.h>
 #import "ProjDef.h"
 #import "MJRefresh.h"
+#import "Masonry.h"
+#import "UIImageView+Webcache.h"
+#import "TipManager.h"
+#import "ThridPartManager.h"
+#import "UserManager.h"
+#import "TTTAttributedLabel.h"
+#import "JXAlertViewManage.h"
 
 #endif /* PrefixHeader_pch */

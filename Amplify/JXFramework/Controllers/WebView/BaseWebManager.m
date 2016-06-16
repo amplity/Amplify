@@ -9,9 +9,7 @@
 #import "BaseWebManager.h"
 #import <JavaScriptCore/JavaScriptCore.h>
 
-
 @implementation BaseWebManager
-
 
 +(instancetype)shareWebManager{
     static BaseWebManager * instance = nil;
@@ -23,7 +21,7 @@
     return instance;
 }
 
--(NSDictionary*)fixJavascriptDataByFun:(NSString *)funName withWebView:(UIWebView*)webView{
+-(NSObject*)fixJavascriptDataByFun:(NSString *)funName withWebView:(UIWebView*)webView{
     //可以传值给js
 //    NSString* givemetoken =  [NSString stringWithFormat:@"givetoken('%@');",[[UserInfoManager sharedManager] getAppToken]];
     
@@ -38,7 +36,7 @@
         JSValue * jsValue =[context evaluateScript:funName];////准备执行的js代码,通过oc方法调用js的alert
         
         
-        dic = [jsValue toDictionary];
+        dic = [jsValue toObject];
         
         
         //    NSString * ffff = [self.baseWebView stringByEvaluatingJavaScriptFromString:@"postStr();"];
@@ -88,5 +86,43 @@
             block(jsArray);
         };
     
+}
+
+-(NSString*)getCombineUrlByParameter:(NSString*)urlName withParameter:(NSDictionary*)parameter{
+    NSString * webLoadStr = @"";
+    NSString * parameterStr = @"";
+    if (parameter) {
+        NSArray * allKeys = parameter.allKeys;
+        NSArray * values = parameter.allValues;
+        
+        
+        
+        for (int i=0 ; i<allKeys.count; i++) {
+            NSString * currentStr = [NSString stringWithFormat:@"%@=%@",[allKeys objectAtIndex:i],[values objectAtIndex:i]];
+            
+            if (i>0) {
+                parameterStr = [NSString stringWithFormat:@"%@&%@",parameterStr,currentStr];
+            }else{
+                parameterStr = [NSString stringWithFormat:@"%@%@",parameterStr,currentStr];
+            }
+        }
+        
+        if ([urlName hasPrefix:@"http://"]||[urlName hasPrefix:@"https://"]) {
+            webLoadStr = [NSString stringWithFormat:@"%@?%@",urlName,parameterStr];
+        }else{
+            webLoadStr = [NSString stringWithFormat:@"%@%@?%@",WebLoadUrl,urlName,parameterStr];
+        }
+        
+    }else{
+        if ([urlName hasPrefix:@"http://"]||[urlName hasPrefix:@"https://"]) {
+            webLoadStr = [NSString stringWithFormat:@"%@",urlName];
+        }else{
+            webLoadStr = [NSString stringWithFormat:@"%@%@",WebLoadUrl,urlName];
+        }
+        
+    }
+    
+    
+    return webLoadStr;
 }
 @end

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="FlM-bX-8tL" customClass="HelpTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FlM-bX-8tL" id="GrT-ye-9x9">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvA-m7-2ba">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="aPo-dJ-jqk"/>
+                        </constraints>
+                        <connections>
+                            <action selector="nextBtnClick:" destination="FlM-bX-8tL" eventType="touchUpInside" id="70e-fk-fbb"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOt-pN-48T">
+                        <rect key="frame" x="20" y="0.0" width="240" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="9RS-L0-U0W"/>
+                            <constraint firstAttribute="width" constant="240" id="Bfs-WU-U7a"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YWS-Lg-ElN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="CSR-VN-GIq"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFz-ZP-CDD">
+                        <rect key="frame" x="268" y="0.0" width="44" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="F6z-D0-afw"/>
+                            <constraint firstAttribute="width" constant="44" id="NuP-YO-YeW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <state key="normal" title="&gt;">
+                            <color key="titleColor" red="0.83137254900000002" green="0.83137254900000002" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GvA-m7-2ba" firstAttribute="top" secondItem="GrT-ye-9x9" secondAttribute="top" id="1NP-tU-Rm2"/>
+                    <constraint firstAttribute="trailing" secondItem="YWS-Lg-ElN" secondAttribute="trailing" id="5EC-bJ-02d"/>
+                    <constraint firstItem="fOt-pN-48T" firstAttribute="top" secondItem="GrT-ye-9x9" secondAttribute="top" id="AYQ-5Z-Udo"/>
+                    <constraint firstAttribute="trailing" secondItem="GvA-m7-2ba" secondAttribute="trailing" id="AtH-qP-B40"/>
+                    <constraint firstItem="GvA-m7-2ba" firstAttribute="leading" secondItem="GrT-ye-9x9" secondAttribute="leading" id="IOa-ro-1W2"/>
+                    <constraint firstItem="dFz-ZP-CDD" firstAttribute="top" secondItem="GrT-ye-9x9" secondAttribute="top" id="bPF-YJ-9eo"/>
+                    <constraint firstAttribute="trailing" secondItem="dFz-ZP-CDD" secondAttribute="trailing" constant="8" id="d0b-pC-W6i"/>
+                    <constraint firstItem="YWS-Lg-ElN" firstAttribute="leading" secondItem="GrT-ye-9x9" secondAttribute="leading" id="ivB-V0-nzu"/>
+                    <constraint firstItem="fOt-pN-48T" firstAttribute="leading" secondItem="GrT-ye-9x9" secondAttribute="leading" constant="20" id="lrw-ef-m7U"/>
+                    <constraint firstItem="YWS-Lg-ElN" firstAttribute="top" secondItem="GrT-ye-9x9" secondAttribute="top" id="u2k-T9-FoG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLab" destination="fOt-pN-48T" id="760-Xg-2JU"/>
+            </connections>
+            <point key="canvasLocation" x="470" y="102"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -44,7 +44,7 @@ typedef void (^progressBlock)(int64_t bytesWritten, int64_t totalBytesWritten, i
  *  @param success 成功block
  *  @param fail    失败block
  */
-+(NSURLSessionDataTask*)getDataWithUrl:(NSString*)urlStr withSuccess:(void(^)(id responseObj))success withFail:(void(^)())fail;
++(NSURLSessionDataTask*)getDataWithUrl:(NSString*)urlStr withParameters:(id)parameters withSuccess:(void(^)(id responseObj))success withFail:(void(^)())fail;
 
 
 /**
@@ -76,9 +76,20 @@ typedef void (^progressBlock)(int64_t bytesWritten, int64_t totalBytesWritten, i
 /**
  文件上传，监听上传进度
  */
-+ (void)updateRequest:(NSString *)url params:(NSDictionary *)params successAndProgress:(progressBlock)progressHandler complete:(responseBlock)completionHandler;
++ (void)upLoadRequest:(NSString *)url withFile:(NSString*)file  successAndProgress:(progressBlock)progressHandler complete:(responseBlock)completionHandler;
 
 
+/**
+ *  上传文件，文件流
+ *
+ *  @param file              文件名
+ *  @param progressHandler
+ *  @param completionHandler
+ */
++(void)upLoadForDataRequest:(NSString *)url withFile:(NSString*)file success:(requestSuccessBlock)successHandler failure:(requestFailureBlock)failureHandler;
+
+
++(void)upLoadForImageRequest:(NSString *)url withImage:(UIImage*)image success:(requestSuccessBlock)successHandler failure:(requestFailureBlock)failureHandler;
 
 /**
  监控网络状态

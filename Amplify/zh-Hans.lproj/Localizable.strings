@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  Amplify
+
+  Created by ZhangJixu on 16/4/20.
+  Copyright © 2016年 hm. All rights reserved.
+*/
+"key" = "中文内容";
+
+/************************************Wish************************/
+//utils
+"ok" = "确定";
+"cancle" = "取消";
+
+
+/************************************Wish************************/
+
+//PhotoVerifyViewController
+"uploadSuccess" = "上传成功";
+"joinSuccess" = "作品入围";
+"verifyEnd" = "审核结果";
+"getIntegral" = "获得%@积分";
+"verifyInfoLab2Fail" = "入围失败了";
+"verifyInfoLab2Success" = "照片入围了";
+"verifyInfoLab3" = "恭喜获得%@积分";
+"verifyInfoLabUnSend3" = "未达成";
+"verifyInfoLab3Success"="恭喜中奖,请完善个人信息";
+"verifyInfoLab3SuccessOrder"="请等待收货";
+"activityLab" = "剩余";
+"activityNumLab" = "人参与";
+"reUploadInfo" = "你确定要重新上传照片吗";
+
+
+//twphotopickerController
+"nexStep" = "下一步";
+
+
+
+//WishInfoViewController
+"storeSuccess" = "收藏成功";

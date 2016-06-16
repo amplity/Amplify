@@ -8,6 +8,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseSearchViewController">
             <connections>
                 <outlet property="myTableView" destination="E08-Y8-Ql8" id="asR-ni-frg"/>
+                <outlet property="scrollHotView" destination="22Q-vi-qTT" id="fCj-8A-wzj"/>
+                <outlet property="titleHeadView" destination="ytk-cf-Mgd" id="oHH-iq-H7S"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,17 +18,59 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E08-Y8-Ql8">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f8B-e6-EZC">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="164"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ytk-cf-Mgd">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                            <color key="backgroundColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="B5B-F6-XP7"/>
+                            </constraints>
+                        </view>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22Q-vi-qTT">
+                            <rect key="frame" x="0.0" y="64" width="600" height="60"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="LTi-rB-sFk"/>
+                            </constraints>
+                        </scrollView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="      你是否想搜" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wds-YW-c9R">
+                            <rect key="frame" x="0.0" y="124" width="600" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="164" id="5ud-wp-8M4"/>
+                        <constraint firstItem="22Q-vi-qTT" firstAttribute="top" secondItem="ytk-cf-Mgd" secondAttribute="bottom" id="BJ4-9b-iRc"/>
+                        <constraint firstAttribute="trailing" secondItem="ytk-cf-Mgd" secondAttribute="trailing" id="Ln1-6M-ZkX"/>
+                        <constraint firstItem="Wds-YW-c9R" firstAttribute="top" secondItem="22Q-vi-qTT" secondAttribute="bottom" id="WE7-3I-32i"/>
+                        <constraint firstAttribute="trailing" secondItem="22Q-vi-qTT" secondAttribute="trailing" id="WYA-9X-kqv"/>
+                        <constraint firstItem="ytk-cf-Mgd" firstAttribute="top" secondItem="f8B-e6-EZC" secondAttribute="top" id="XvT-cR-HKf"/>
+                        <constraint firstItem="22Q-vi-qTT" firstAttribute="leading" secondItem="f8B-e6-EZC" secondAttribute="leading" id="flb-vJ-2dI"/>
+                        <constraint firstAttribute="bottom" secondItem="Wds-YW-c9R" secondAttribute="bottom" id="gXK-tg-DIv"/>
+                        <constraint firstItem="Wds-YW-c9R" firstAttribute="leading" secondItem="f8B-e6-EZC" secondAttribute="leading" id="siU-CG-fts"/>
+                        <constraint firstAttribute="trailing" secondItem="Wds-YW-c9R" secondAttribute="trailing" id="zF6-BF-Zyr"/>
+                        <constraint firstItem="ytk-cf-Mgd" firstAttribute="leading" secondItem="f8B-e6-EZC" secondAttribute="leading" id="zKY-xz-toh"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E08-Y8-Ql8">
+                    <rect key="frame" x="0.0" y="164" width="600" height="436"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="E08-Y8-Ql8" secondAttribute="bottom" id="4jk-6S-PA2"/>
-                <constraint firstAttribute="trailing" secondItem="E08-Y8-Ql8" secondAttribute="trailing" id="MsQ-xa-gsy"/>
-                <constraint firstItem="E08-Y8-Ql8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ol4-JP-w5G"/>
-                <constraint firstItem="E08-Y8-Ql8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="c7X-bu-wvn"/>
+                <constraint firstAttribute="bottom" secondItem="E08-Y8-Ql8" secondAttribute="bottom" id="07v-nq-cmR"/>
+                <constraint firstItem="f8B-e6-EZC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Pl2-0v-6gN"/>
+                <constraint firstItem="E08-Y8-Ql8" firstAttribute="top" secondItem="f8B-e6-EZC" secondAttribute="bottom" id="YDf-kf-xDb"/>
+                <constraint firstItem="E08-Y8-Ql8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dQI-Ur-8bS"/>
+                <constraint firstAttribute="trailing" secondItem="f8B-e6-EZC" secondAttribute="trailing" id="qkS-5n-0jp"/>
+                <constraint firstItem="f8B-e6-EZC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uaJ-6k-t9r"/>
+                <constraint firstAttribute="trailing" secondItem="E08-Y8-Ql8" secondAttribute="trailing" id="yAU-1D-GpP"/>
             </constraints>
         </view>
     </objects>

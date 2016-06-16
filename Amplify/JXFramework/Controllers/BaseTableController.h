@@ -7,11 +7,12 @@
 //
 
 #import "BaseViewController.h"
+#import "BaseTableCell.h"
 
 typedef void(^DownRefreshBlock)();
 typedef void(^UpRefreshBlock)(BOOL hasNewData);
 
-@interface BaseTableController : BaseViewController<UITableViewDelegate,UITableViewDataSource>
+@interface BaseTableController : BaseViewController<UITableViewDelegate,UITableViewDataSource,BaseTableCellDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 
 /**

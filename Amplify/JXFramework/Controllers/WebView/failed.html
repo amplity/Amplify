@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <title>加载失败</title>
+    <style>
+        .f4x{font-size:17px;}
+        .graybg{background:#EEE;}
+        .tc{text-align:center;}
+        .hmBody{position:absolute;width:100%;left:0;top:50%;color:#222;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);}
+        .icon-err{position:relative;display:block;width:2.5em;height:2.5em;margin:1em auto;background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="m8,0c-4.418,0-8,3.582-8,8s3.582,8 8,8 8-3.582 8-8-3.582-8-8-8zm1,13h-2v-2h2v2zm0-3h-2v-7h2v7z"/></svg>') no-repeat 50% 50%;background-size:contain;}
+        .reload-btn{display:block;text-decoration:none;width:12em;height:2.6em;color:#222;line-height:2.6em;text-align:center;margin:2em auto;background:#FFF;}
+    </style>
+</head>
+<body class="graybg">
+<div class="hmBody">
+   <i class="icon-err"></i>
+   <p class="tc f2x">加载失败，请刷新试试</p>
+   <a class="f2x reload-btn" href="javascript:;" onclick="location.reload(true);">刷新试试</a>
+</div><!--/hmBody-->
+</body>
+</html>

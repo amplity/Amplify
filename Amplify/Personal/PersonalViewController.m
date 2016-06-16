@@ -7,6 +7,14 @@
 //
 
 #import "PersonalViewController.h"
+#import "LoginViewController.h"
+#import "PersonalInfoViewController.h"
+#import "BaseWebManager.h"
+#import "PersonalUrlModel.h"
+#import "HomTabBarController.h"
+#import "SettingViewController.h"
+#import "LinkModel.h"
+#import "DiscoverInfoViewController.h"
 
 @interface PersonalViewController ()
 
@@ -17,21 +25,96 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+//    self.automaticallyAdjustsScrollViewInsets = NO;//    自动滚动调整，默认为YES
+
+}
+
+
+
+-(void)initLoginStatus{
+    
+    NSString * comUrl = [[BaseWebManager shareWebManager] getCombineUrlByParameter:[NSString stringWithFormat:@"%@?token=%@",@"/api/app/member/myAccount",[UserManager token]] withParameter:nil];
+    if([UserManager isLogin]){
+        [self.baseWebView baseLoadRequest:comUrl];
+    }else{
+        
+        
+        __weak typeof(self) weakSelf = self;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            LoginViewController * loginViewController = [[LoginViewController alloc] init];
+            loginViewController.loginRestltDelegate = weakSelf;
+            [weakSelf.navigationController pushViewController:loginViewController animated:YES];
+        });
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+//    if( self.view.window == nil && [self isViewLoaded]) {
+//        
+//        //安全移除控制器的view;
+//        
+//        self.view = nil;
+//        
+//    }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)onGoDownRefreshWeb:(void (^)())refreshDownCompleted{
+    refreshDownCompleted();
+    
+    [self.baseWebView loadRequest:[[NSURLRequest alloc] initWithURL:[NSURL URLWithString:self.refrshUrl] ]];
 }
-*/
+
+
+#pragma mark- UIWebViewDelegate
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView{
+    [super webViewDidFinishLoad:webView];
+    
+    [[BaseWebControllerManager shareWebManager] pushControllerForJsObject:self withBaseWebView:webView];
+
+}
+
+
+
+#pragma mark - LoginResultDelegate
+-(void)showLoginResult:(BOOL)isSuccess withClickStr:(NSString *)clickStr{
+    if (isSuccess) {
+        //个人页成功后，由viewDidAppear做处理
+    }else{
+        //切换到首页
+        [[HomTabBarController shareInstance] changeBarViewController:@"0"];
+        
+    }
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    
+    
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self initLoginStatus];
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
 
 @end

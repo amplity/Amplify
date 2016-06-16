@@ -46,9 +46,8 @@
 - (IBAction) tappedRightButton:(id)sender
 
 {
-    
-    NSUInteger selectedIndex = [self.tabBarController selectedIndex];
-    
+    UIView * target = sender;
+    NSUInteger selectedIndex = target.tag;
     
     
     NSArray *aryViewController = self.tabBarController.viewControllers;

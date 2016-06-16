@@ -127,8 +127,15 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     BaseTableCell * baseTableCell = [_cellStyles objectAtIndex:indexPath.row];
+    [baseTableCell setCellData:nil];
     
     return baseTableCell.height;
+}
+
+
+#pragma mark - BaseTableCellDelegate
+-(void)baseTableCellClick:(NSString *)clickName withObjec:(id)obj{
+    //subclass
 }
 
 @end

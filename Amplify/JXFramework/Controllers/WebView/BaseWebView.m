@@ -10,12 +10,19 @@
 
 @implementation BaseWebView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+
+-(void)baseLoadRequest:(NSString*)url{
+    
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:20.0];
+    NSMutableURLRequest *mutableRequest = [request mutableCopy];
+    
+    NSString* tonken = [UserManager token];
+    [mutableRequest addValue:tonken forHTTPHeaderField:@"token"];
+    
+    [self loadRequest:mutableRequest];
+    
 }
-*/
+
 
 @end

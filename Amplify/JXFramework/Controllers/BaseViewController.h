@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseView.h"
 
-@interface BaseViewController : UIViewController<UINavigationControllerDelegate>
+@interface BaseViewController : UIViewController<BaseViewDelegate,LoginResultDelegate,UIGestureRecognizerDelegate>
 
+
+@property (nonatomic, strong) id inputViewData;
 @end

@@ -10,4 +10,9 @@
 
 @interface SwipeViewController : BaseViewController
 
+
+- (IBAction) tappedRightButton:(id)sender;
+
+
+- (IBAction) tappedLeftButton:(id)sender;
 @end

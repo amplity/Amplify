@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChangePhotoView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUX-71-ICL">
+                    <rect key="frame" x="0.0" y="380" width="600" height="180"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1I4-rU-PUv">
+                            <rect key="frame" x="150" y="50" width="300" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="M84-o1-Egl"/>
+                                <constraint firstAttribute="height" constant="80" id="zmi-zf-gl1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92549019607843142" green="0.92156862745098034" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="1I4-rU-PUv" secondAttribute="bottom" constant="50" id="1nh-aF-Atg"/>
+                        <constraint firstAttribute="height" constant="180" id="9d4-0F-5w4"/>
+                        <constraint firstItem="1I4-rU-PUv" firstAttribute="centerX" secondItem="BUX-71-ICL" secondAttribute="centerX" id="DHg-54-NRC"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6W-VC-5Zo">
+                    <rect key="frame" x="0.0" y="560" width="600" height="40"/>
+                    <color key="backgroundColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="UsN-pn-DLQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="换一张"/>
+                    <connections>
+                        <action selector="changeBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="XQX-mk-LiZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCQ-aX-JCX">
+                    <rect key="frame" x="544" y="365" width="31" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="31" id="Fgm-13-SZ7"/>
+                        <constraint firstAttribute="height" constant="31" id="NqS-aA-jlK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" backgroundImage="wishCloseBtn"/>
+                    <connections>
+                        <action selector="cancleBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="4wu-fU-u13"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="BUX-71-ICL" secondAttribute="bottom" constant="40" id="0zU-tK-3pb"/>
+                <constraint firstAttribute="trailing" secondItem="BUX-71-ICL" secondAttribute="trailing" id="F34-yr-pXm"/>
+                <constraint firstAttribute="bottom" secondItem="J6W-VC-5Zo" secondAttribute="bottom" id="Laz-8b-Qww"/>
+                <constraint firstItem="BUX-71-ICL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cmZ-KL-qxg"/>
+                <constraint firstItem="J6W-VC-5Zo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tii-xx-QT2"/>
+                <constraint firstAttribute="trailing" secondItem="fCQ-aX-JCX" secondAttribute="trailing" constant="25" id="vvm-Qt-9mT"/>
+                <constraint firstAttribute="trailing" secondItem="J6W-VC-5Zo" secondAttribute="trailing" id="xO3-T6-qQh"/>
+                <constraint firstItem="J6W-VC-5Zo" firstAttribute="top" secondItem="fCQ-aX-JCX" secondAttribute="bottom" constant="164" id="xUn-bm-i0d"/>
+            </constraints>
+            <connections>
+                <outlet property="cancleBtn" destination="fCQ-aX-JCX" id="9Dc-td-V6y"/>
+                <outlet property="changeBtn" destination="J6W-VC-5Zo" id="XAT-NE-Mct"/>
+                <outlet property="changeInfo" destination="1I4-rU-PUv" id="MIY-n4-tp4"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="wishCloseBtn" width="31" height="31"/>
+    </resources>
+</document>

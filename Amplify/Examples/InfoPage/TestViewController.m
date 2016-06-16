@@ -74,7 +74,7 @@
         }
         
         DLog(@"");
-    } withFail:^{
+    } withFail:^(NSError *error){
         DLog(@"");
     }];
 }
