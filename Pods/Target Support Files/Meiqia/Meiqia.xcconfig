@@ -1,0 +1,7 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Meiqia/Meiqia-SDK-files"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/Meiqia" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/FMDB" "${PODS_ROOT}/Headers/Public/JDStatusBarNotification" "${PODS_ROOT}/Headers/Public/MBProgressHUD" "${PODS_ROOT}/Headers/Public/MJExtension" "${PODS_ROOT}/Headers/Public/MJRefresh" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/Meiqia" "${PODS_ROOT}/Headers/Public/PLPlayerKit" "${PODS_ROOT}/Headers/Public/Pingpp" "${PODS_ROOT}/Headers/Public/SCTableViewCell" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/TTTAttributedLabel" "${PODS_ROOT}/Headers/Public/UMengAnalytics-NO-IDFA" "${PODS_ROOT}/Headers/Public/ViewDeck" "${PODS_ROOT}/Headers/Public/XHScrollMenu" "${PODS_ROOT}/Headers/Public/pili-librtmp"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Meiqia/Meiqia-SDK-files/MQChatViewController/Vendors/MLAudioRecorder/amr_en_de/lib" $(inherited) "${PODS_ROOT}/Meiqia/Meiqia-SDK-files/MQChatViewController/Vendors/MLAudioRecorder/amr_en_de/lib" "$(PODS_ROOT)/**"
+OTHER_LDFLAGS = -l"icucore" -l"opencore-amrnb" -l"opencore-amrwb" -l"sqlite3" -l"stdc++" -framework "AVFoundation" -framework "CoreTelephony" -framework "MeiQiaSDK" -framework "MobileCoreServices" -framework "SystemConfiguration"
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B391FA172B8408BEEB6F4F05E4BDC74A56CB0F40",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B391FA172B8408BEEB6F4F05E4BDC74A56CB0F40" : 0,
+    "9FAA105746C3418EF20A20B617E489AF3A75E578" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D42D53BE-5811-4CF2-A5F4-290C735CD375",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B391FA172B8408BEEB6F4F05E4BDC74A56CB0F40" : "Amplify\/",
+    "9FAA105746C3418EF20A20B617E489AF3A75E578" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Amplify",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Amplify.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.oschina.net\/harmay\/hmmall.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9FAA105746C3418EF20A20B617E489AF3A75E578"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/amplity\/Amplify.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B391FA172B8408BEEB6F4F05E4BDC74A56CB0F40"
+    }
+  ]
+}

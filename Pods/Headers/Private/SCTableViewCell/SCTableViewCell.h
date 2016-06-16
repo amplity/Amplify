@@ -1,0 +1,1 @@
+../../../SCTableViewCell/Pod/Classes/SCTableViewCell.h

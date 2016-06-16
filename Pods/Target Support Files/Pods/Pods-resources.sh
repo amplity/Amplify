@@ -59,10 +59,32 @@ install_resource()
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "Meiqia/Meiqia-SDK-files/MQChatViewController/Assets/MQChatViewAsset.bundle"
+  install_resource "Pingpp/lib/Channels/Alipay/AlipaySDK.bundle"
+  install_resource "Pingpp/lib/Pingpp.bundle"
+  install_resource "XHScrollMenu/Source/Resources/leftShadow@2x.png"
+  install_resource "XHScrollMenu/Source/Resources/managerMenuButton@2x.png"
+  install_resource "XHScrollMenu/Source/Resources/rightShadow@2x.png"
   install_resource "${BUILT_PRODUCTS_DIR}/SCTableViewCell.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "Meiqia/Meiqia-SDK-files/MQChatViewController/Assets/MQChatViewAsset.bundle"
+  install_resource "Pingpp/lib/Channels/Alipay/AlipaySDK.bundle"
+  install_resource "Pingpp/lib/Pingpp.bundle"
+  install_resource "XHScrollMenu/Source/Resources/leftShadow@2x.png"
+  install_resource "XHScrollMenu/Source/Resources/managerMenuButton@2x.png"
+  install_resource "XHScrollMenu/Source/Resources/rightShadow@2x.png"
+  install_resource "${BUILT_PRODUCTS_DIR}/SCTableViewCell.bundle"
+fi
+if [[ "$CONFIGURATION" == "Hoc" ]]; then
+  install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "Meiqia/Meiqia-SDK-files/MQChatViewController/Assets/MQChatViewAsset.bundle"
+  install_resource "Pingpp/lib/Channels/Alipay/AlipaySDK.bundle"
+  install_resource "Pingpp/lib/Pingpp.bundle"
+  install_resource "XHScrollMenu/Source/Resources/leftShadow@2x.png"
+  install_resource "XHScrollMenu/Source/Resources/managerMenuButton@2x.png"
+  install_resource "XHScrollMenu/Source/Resources/rightShadow@2x.png"
   install_resource "${BUILT_PRODUCTS_DIR}/SCTableViewCell.bundle"
 fi
 

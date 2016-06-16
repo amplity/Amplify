@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JDStatusBarNotification.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -25,6 +30,16 @@
 			<false/>
 		</dict>
 		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Meiqia.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -59,60 +74,95 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>XHScrollMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>pili-librtmp.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>30BEB1ED50B14C7B3F51CFA56D611D78</key>
+		<key>0414153B415819616259FE9B6AF44358</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3390191465EB261E9F0B17A76270731A</key>
+		<key>2D3FC0E8E585420CBB7D3A7CFE9877FA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>76487128AF81A091EC53EA12827C2A0B</key>
+		<key>2DDFEAAB12264C9F40D2DEC419C4DB19</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8F74D9EA91F4C43190670066BAC37D44</key>
+		<key>313613EF1543CA641684AC46EEE6E81B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>928353533005A4198EBDA5B700D37B64</key>
+		<key>4523E86A925DD29CBBB2C8DE479BDF9E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>96E95F5C299B80A57348F3DA20944217</key>
+		<key>5F9E0394BBEA97CAE73D7AB693741CBB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9EAB3E42EF957541E6C3C76D35FD008E</key>
+		<key>8DAC9DAEDAB75CE3FE8CDB3BAF380723</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9F12FB4A63E20F601CFB2E64A65B57C1</key>
+		<key>ABF0BC58ECB1F723F764FAE28FFD1267</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CE80A13125B8B834DC02F2FCB7DEB4DD</key>
+		<key>B177FEA6B8E489B4D18FB56EE0F6C0A5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FB638553FD34A64CED3A0C4A8AA1ED27</key>
+		<key>B2E5342961C81693FD7E58F42D5238BC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FE2F1D7B9D9FCEA148517E4657B243F4</key>
+		<key>CF6723260A18DFC95A2612A7729D12FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CFACBF4D59A94F1A3496976B66E8A92D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D9130DAEB86E93B1360B278A3CD5302E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DFB99EB3F03C6588738DBB6EBD170520</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA226204C86396E1CE99472EDD53CB1B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F29AA2B92D492F2316889A7E9B9B6DF5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

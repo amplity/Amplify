@@ -1,0 +1,1 @@
+../../../Meiqia/Meiqia-SDK-files/MQChatViewController/TableCells/CellView/MQEvaluationResultCell.h

@@ -1,0 +1,1 @@
+../../../Meiqia/Meiqia-SDK-files/MQMessageForm/Config/Styles/PreDefined/MQMessageFormViewStyleBlue.h
